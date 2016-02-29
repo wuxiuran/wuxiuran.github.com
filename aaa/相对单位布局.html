@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="base.css" type="text/css" rel="stylesheet" />
+<style>
+
+html{ font-size:20px;}
+header{ width:16rem; height:2.225rem; background:#262626; margin:0 auto; border-bottom:0.1rem  solid #4bccae; position:relative;}
+.h_nav{ width:1.45rem; height:1.15rem; float:left; background:url(img/nav_bg.png) no-repeat; margin-top:0.525rem; margin-left:0.4rem; background-size:100%; cursor:pointer;}
+.h_logo{ width:6.4rem; height:1.2rem; position:absolute; top:50%; left:50%; margin-top:-0.6rem; margin-left:-3.2rem; background:url(img/logo.png) no-repeat; text-indent:-999999rem; background-size:100%;}
+.changePc{ width:1.45rem; height:1.15rem; float:right; margin-right:0.4rem; margin-top:0.525rem; background:url(img/pc_bg.png) no-repeat; background-size:100%;}
+.login_box{ width:16rem; height:2.05rem; border-bottom:0.05rem solid #d1e6f7; margin:0 auto; display:-webkit-box;background:#fafafa;}
+.login_box li{ -webkit-box-flex:1; box-sizing:border-box;}
+.user_p,.register_p{ width:1.45rem; height:1.45rem; margin-top:0.45rem; margin-left:1.45rem; float:left;}
+.user_p{ background:url(img/login.png) no-repeat; background-size:100%;}
+.register_p{ background:url(img/register.png) no-repeat; background-size:100%;}
+.user_login,.user_register{ float:left; font-size:0.75rem; color:#919191; height:0.75rem; line-height:0.75rem; margin-top:0.7rem; margin-left:0.6rem;}
+.register_border{ width:0.05rem; height:1.45rem; background:#e6e6e6; position:absolute; top:0.275rem; left:0;}
+
+section{ width:16rem; margin:0 auto;}
+
+.new_box,.new_list,.new_pic{ width:16rem; height:7.8rem;}
+.new_word{ width:15.2rem; margin:0 auto; border-bottom:0.1rem solid #58c1b0;}
+.new_word_list{ width:15.2rem; height:2rem; border-bottom:0.05rem solid #ececec; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; line-height:2rem; font-size:0.75rem; text-indent:0.7rem;}
+
+</style>
+<script>
+window.onload=window.onresize=function (){
+	document.documentElement.style.fontSize=document.documentElement.clientWidth/320*20+'px';	
+};
+</script>
+</head>
+
+<body>
+<header class="clearfix">
+	<nav class="h_nav"></nav>
+	<h1 class="h_logo">Guokr.com</h1>
+	<a href="javascript:;" class="changePc"></a>
+</header>
+<ul class="login_box clearfix">
+	<li>
+		<span class="user_p"></span>
+		<a href="javascript:;" class="user_login">用户登录</a>
+	</li>
+	<li style=" position:relative;">
+		<i class="register_border"></i>
+		<span class="register_p"></span>
+		<a href="javascript:;" class="user_register">用户登录</a>
+	</li>
+</ul>
+<section>
+	<ul class="new_box">
+		<li class="new_list">
+			<a class="new_link" href="javascript:;">
+				<img class="new_pic" src="img/gugong.png" alt=""/>
+			</a>
+		</li>
+	</ul>
+	<ul class="new_word">
+		<li class="new_word_list">
+			<a href="javascript:;">
+				解读科学观点时，你应该知道的20个原则
+			</a>
+		</li>
+		<li class="new_word_list">
+			<a href="javascript:;">
+				解读科学观点时，你应该知道的20个原则
+			</a>
+		</li>
+		<li class="new_word_list">
+			<a href="javascript:;">
+				解读科学观点时，你应该知道的20个原则
+			</a>
+		</li>
+		<li class="new_word_list">
+			<a href="javascript:;">
+				解读科学观点时，你应该知道的20个原则
+			</a>
+		</li>
+		<li class="new_word_list">
+			<a href="javascript:;">
+				解读科学观点时，你应该知道的20个原则
+			</a>
+		</li>
+		<li class="new_word_list">
+			<a href="javascript:;">
+				解读科学观点时，你应该知道的20个原则
+			</a>
+		</li>
+		<li class="new_word_list" style="border-bottom:none;">
+			<a href="javascript:;">
+				解读科学观点时，你应该知道的20个原则
+			</a>
+		</li>
+	</ul>
+</section>
+</body>
+</html>
