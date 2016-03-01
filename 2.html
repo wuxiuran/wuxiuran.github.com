@@ -29,19 +29,23 @@ function drag(obj)
 		
 		function fnMove(ev)
 		{
-			
+			if(ev.targetTouches[0].identifier == id){
 				x=ev.targetTouches[0].pageX-disX;
 				y=ev.targetTouches[0].pageY-disY;
 				
 				obj.style.WebkitTransform='translate3d('+x+'px,'+y+'px,0px)';
 			
-			
+			}
 		}
 		
-		function fnEnd()
+		function fnEnd(ev)
 		{
-			document.removeEventListener('touchmove',fnMove,false);
-			document.removeEventListener('touchend',fnEnd,false);	
+			if(ev.changedTouches[0].identifier == id)
+			{
+				document.removeEventListener('touchmove',fnMove,false);
+				document.removeEventListener('touchend',fnEnd,false);	
+			}
+			
 		}
 		
 		document.addEventListener('touchmove',fnMove,false);
@@ -68,4 +72,6 @@ document.addEventListener('DOMContentLoaded',function (){
 <div class="box2"></div>
 </body>
 </html>
+
+
 
