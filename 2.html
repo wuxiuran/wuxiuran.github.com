@@ -20,8 +20,11 @@ function a2d(n)
 document.addEventListener('DOMContentLoaded',function (){
 	var oBox=document.getElementById('box');
 	var d=0;
+	var s=0;
 	oBox.addEventListener('touchstart',function (ev){
 		var oldD=d;
+		
+		var oldS=s;
 		
 		function getD(obj,ev)
 		{
@@ -35,9 +38,23 @@ document.addEventListener('DOMContentLoaded',function (){
 			return d;
 		}
 		
+		function getS(ev){
+			var x1=ev.targetTouches[0].pageX;
+			var y1=ev.targetTouches[0].pageY;
+			
+			var x2=ev.targetTouches[1].pageX;
+			var y2=ev.targetTouches[1].pageY;	
+			
+			var a=x1-x2;
+			var b=y1-y2;
+			
+			return Math.sqrt(a*a+b*b);
+		}
+		
 		if(ev.targetTouches.length == 2)
 		{
 			var downD=getD(oBox,ev);
+			var downS=getS(ev);
 		}
 				
 		
@@ -45,8 +62,10 @@ document.addEventListener('DOMContentLoaded',function (){
 			if(ev.targetTouches.length == 2)
 			{
 				d=oldD+downD-getD(oBox,ev);
-			
-				oBox.style.WebkitTransform='rotate('+d+'deg)';	
+				
+				s=oldS*getS(ev)/downS;
+				
+				oBox.style.WebkitTransform='rotate('+d+'deg) scale('+s+')';	
 			}
 			
 		}
@@ -63,7 +82,6 @@ document.addEventListener('DOMContentLoaded',function (){
 <div id="box">div</div>
 </body>
 </html>
-
 
 
 
