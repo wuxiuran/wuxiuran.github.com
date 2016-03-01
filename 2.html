@@ -9,69 +9,57 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <style>
-*{ margin:0; padding:0;}
-.box1,.box2{ width:100px; height:100px;  position:absolute;  top:0;}
-.box1{left:0;background:red;}
-.box2{ background:blue; right:0;}
-
+#box{ width:100px; height:100px; position:absolute;
+left:100px; top:100px; background:red;}
 </style>
 <script>
-function drag(obj)
+function a2d(n)
 {
-	var x=0;
-	var y=0;
-	obj.addEventListener('touchstart', function (ev){
-		var disX=ev.targetTouches[0].pageX-x;
-		var disY=ev.targetTouches[0].pageY-y;
+	return n*180/Math.PI;	
+}
+document.addEventListener('DOMContentLoaded',function (){
+	var oBox=document.getElementById('box');
+	var d=0;
+	oBox.addEventListener('touchstart',function (ev){
+		var oldD=d;
 		
-		var id=ev.targetTouches[0].identifier;
-		
-		
-		function fnMove(ev)
+		function getD(obj,ev)
 		{
-			if(ev.targetTouches[0].identifier == id){
-				x=ev.targetTouches[0].pageX-disX;
-				y=ev.targetTouches[0].pageY-disY;
-				
-				obj.style.WebkitTransform='translate3d('+x+'px,'+y+'px,0px)';
+			var x1=obj.offsetLeft+obj.offsetWidth/2;
+			var y1=obj.offsetTop+obj.offsetHeight/2;
+			var x2=ev.targetTouches[0].pageX;
+			var y2=ev.targetTouches[0].pageY;
 			
-			}
+			var d=a2d(Math.atan2((y1-y2),(x2-x1)));
+			
+			return d;
 		}
 		
-		function fnEnd(ev)
-		{
-			if(ev.changedTouches[0].identifier == id)
-			{
-				document.removeEventListener('touchmove',fnMove,false);
-				document.removeEventListener('touchend',fnEnd,false);	
-			}
+		var downD=getD(oBox,ev);
+		
+		var disD=downD-oldD;
+		
+		function fnMove(ev){
+			d=oldD+downD-getD(oBox,ev);
 			
+			oBox.style.WebkitTransform='rotate('+d+'deg)';	
 		}
 		
 		document.addEventListener('touchmove',fnMove,false);
-		document.addEventListener('touchend',fnEnd,false);
-		ev.preventDefault();	
-	},false);	
-}
-
-document.addEventListener('DOMContentLoaded',function (){
-	var aDiv=document.querySelectorAll('div');
-	
-	for(var i=0; i<aDiv.length; i++)
-	{
-		drag(aDiv[i]);	
-	}
-	
+		
+		ev.preventDefault();
+	},false);
 },false);
-
 </script>
 </head>
 
 <body>
-<div class="box1"></div>
-<div class="box2"></div>
+<div id="box">div</div>
 </body>
 </html>
+
+
+
 
 
 
