@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded',function (){
 			var x2=ev.targetTouches[1].pageX;
 			var y2=ev.targetTouches[1].pageY;
 			
+			
+			
 			var x=(x1+x2)/2;
 			var y=(y1+y2)/2;
 			
@@ -89,7 +91,7 @@ document.addEventListener('DOMContentLoaded',function (){
 				x=oldX+getP(ev).x-downX;
 				y=oldY+getP(ev).y-downY;
 				
-				oBox.style.WebkitTransform='rotate('+d+'deg) scale('+s+') translate3d('+x+'px, '+y+'px, 0px)';	
+				oBox.style.WebkitTransform='translate3d('+x+'px, '+y+'px, 0px) rotate('+d+'deg) scale('+s+')';	
 			}
 			
 		}
