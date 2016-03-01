@@ -35,14 +35,20 @@ document.addEventListener('DOMContentLoaded',function (){
 			return d;
 		}
 		
-		var downD=getD(oBox,ev);
-		
-		var disD=downD-oldD;
+		if(ev.targetTouches.length == 2)
+		{
+			var downD=getD(oBox,ev);
+		}
+				
 		
 		function fnMove(ev){
-			d=oldD+downD-getD(oBox,ev);
+			if(ev.targetTouches.length == 2)
+			{
+				d=oldD+downD-getD(oBox,ev);
 			
-			oBox.style.WebkitTransform='rotate('+d+'deg)';	
+				oBox.style.WebkitTransform='rotate('+d+'deg)';	
+			}
+			
 		}
 		
 		document.addEventListener('touchmove',fnMove,false);
@@ -57,8 +63,6 @@ document.addEventListener('DOMContentLoaded',function (){
 <div id="box">div</div>
 </body>
 </html>
-
-
 
 
 
