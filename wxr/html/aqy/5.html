@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>武修然的爱奇艺</title>
+ <link rel="stylesheet" href="css/base.css" />
+ <link rel="stylesheet" href="css/aqy.css" />
+ <script>
+   window.onload=function(){
+	   var oList=document.getElementById('bannerjsbox')
+	   var oKeybox=document.getElementById('bannerjsboxkey')
+	   var oKeyboxF=document.getElementById('keyfirst')
+	   var oKey=oKeybox.getElementsByTagName('a')
+	   var oBan=oList.getElementsByTagName('li')
+	   var oAnglet=oKeyboxF.getElementsByTagName('i')
+	   var oKeyboxL=document.getElementById('keylast')
+	   var oAngleb=oKeyboxL.getElementsByTagName('i')
+	      for(var i=0;i<10;i++){
+			  oKey[i].index=i;
+			  oKey[i].onmouseover=function(){
+				  for(var i=0;i<2;i++){
+					   oAnglet[i].style.display='none';
+					   oAngleb[i].style.display='none'; 
+					   }
+				  for(var i=0;i<10;i++){
+					  oKey[i].className='header_ban_menubox_link'
+					  oBan[i].style.display='none';}
+				  oBan[this.index].style.display='block'; 
+				  this.className='header_ban_menubox_link_js'}
+			            }
+			  oKeyboxF.onmouseover=function(){
+				    for(var i=0;i<2;i++){oAnglet[i].style.display='block';}
+				  }
+			  oKeyboxL.onmouseover=function(){for(var i=0;i<2;i++){
+				  oAngleb[i].style.display='block';}
+			  }
+	   }
+ </script>
+
+</head>
+
+<body>
+  <!--header部分-->
+   <div class="header">
+      <div class="header_ban">
+        <div class="header_ban_box">
+         <ul id="bannerjsbox">
+             <li class="header_ban_box_bannerlist" style=" display:block;"><a class="header_ban_link" href="#"></a></li>
+             <li class="header_ban_box_bannerlist header_ban_box_bannerlist2"><a class="header_ban_link" href="#"></a></li>
+             <li class="header_ban_box_bannerlist header_ban_box_bannerlist3"><a class="header_ban_link" href="#"></a></li>
+             <li class="header_ban_box_bannerlist header_ban_box_bannerlist4"><a class="header_ban_link" href="#"></a></li>
+             <li class="header_ban_box_bannerlist header_ban_box_bannerlist5"><a class="header_ban_link" href="#"></a></li>
+             <li class="header_ban_box_bannerlist header_ban_box_bannerlist6"><a class="header_ban_link" href="#"></a></li>
+             <li class="header_ban_box_bannerlist header_ban_box_bannerlist7"><a class="header_ban_link" href="#"></a></li>
+             <li class="header_ban_box_bannerlist header_ban_box_bannerlist8"><a class="header_ban_link" href="#"></a></li>
+             <li class="header_ban_box_bannerlist header_ban_box_bannerlist9"><a class="header_ban_link" href="#"></a></li>
+             <li class="header_ban_box_bannerlist header_ban_box_bannerlist10"><a class="header_ban_link" href="#"></a></li>
+         </ul>
+         
+         <div class="header_ban_search clearfix">
+            <ul class="header_ban_loginbar clearfix">
+              <li class="header_ban_loginbar_list"><a class="header_ban_loginbar_link" href="#">登录</a></li>
+              <li class="header_ban_loginbar_list"><a class="header_ban_loginbar_link" href="#">注册</a></li>
+              <li class="header_ban_loginbar_list"><a class="header_ban_loginbar_link" href="#">开通VIP</a></li>
+              <li class="header_ban_loginbar_list"><a class="header_ban_loginbar_link" href="#">消息<i class="header_ban_loginbar_link_bg"></i></a></li>
+              <li class="header_ban_loginbar_list"><a class="header_ban_loginbar_link" href="#">播放记录<i class="header_ban_loginbar_link_bg"></i></a></li>
+              
+            </ul>
+            <div class="header_ban_search_box">
+              <form action="#">
+              <div class="header_ban_search_lbox clearfix">
+               <input class="header_inp_tex" type="text" placeholder="快乐大本营"  name="keyword"  />
+               <input class="header_inp_sub" type="submit" value=""; />
+              </div>
+              <input class="header_inp_fil" type="button" value="上传视频" />
+              <i class="pos_point"></i>
+              </form>
+            </div>
+         </div>
+         <div class="header_ban_menu">
+             <ul class="header_ban_menubox" id="bannerjsboxkey">
+                <li id="keyfirst"><a class="header_ban_menubox_link moren" href="#">团圆饭：舌尖上的百味亲情
+                 <i class="header_ban_menubox_link_tl"></i>
+                 <i class="header_ban_menubox_link_tr"></i>
+                </a>
+                  
+                </li>
+                <li><a class="header_ban_menubox_link" href="#">团圆饭：舌尖上的百味亲情</a></li>
+                <li><a class="header_ban_menubox_link" href="#">团圆饭：舌尖上的百味亲情</a></li>
+                <li><a class="header_ban_menubox_link" href="#">团圆饭：舌尖上的百味亲情</a></li>
+                <li><a class="header_ban_menubox_link" href="#">团圆饭：舌尖上的百味亲情</a></li>
+                <li><a class="header_ban_menubox_link" href="#">团圆饭：舌尖上的百味亲情</a></li>
+                <li><a class="header_ban_menubox_link" href="#">团圆饭：舌尖上的百味亲情</a></li>
+                <li><a class="header_ban_menubox_link" href="#">团圆饭：舌尖上的百味亲情</a></li>
+                <li><a class="header_ban_menubox_link" href="#">团圆饭：舌尖上的百味亲情</a></li>
+                <li id="keylast"><a class="header_ban_menubox_link" href="#">团圆饭：舌尖上的百味亲情
+                <i class="header_ban_menubox_link_bl"></i>
+                 <i class="header_ban_menubox_link_br"></i>
+                </a>
+                
+                </li>
+             </ul>
+         </div>
+       </div>
+      </div>  
+      
+      <div class="header_bbox clearfix">
+         <div class="header_bbox_angle_tl"></div>
+         <div class="header_bbox_angle_tr"></div>
+         <div class="header_bbox_angle_bl"></div>
+         <div class="header_bbox_angle_br"></div>
+         <div class="header_bbox_logobox clearfix">
+            <h1 class="header_bbox_logo"><a class="header_bbox_logo_link" href="#">爱奇艺</a>
+            </h1>
+            
+            <div class="header_bbox_yxpz"><img src="img/logoyxpz_new.png" /></div>
+            </div>
+            <ul class="header_bbox_list1">
+              <li class="header_bbox_list1_con"><a class="header_bbox_list1_link" href="#">娱乐</a></li>
+              <li class="header_bbox_list1_con"><a class="header_bbox_list1_link" href="#">体育</a></li>
+              <li class="header_bbox_list1_con"><a class="header_bbox_list1_link" href="#">资讯</a></li>
+            </ul>
+            <ul class="header_bbox_list1 header_bbox_list2 clearfix">
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">电影</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">电视剧</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">片花</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">综艺</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">微电影</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">脱口秀<i class="header_point2"></i></a></li>
+            </ul>
+            <ul class="header_bbox_list1 header_bbox_list3 clearfix">
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">动漫</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">生活</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">少儿</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">母婴</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">游戏</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">教育</a></li>
+            </ul>
+            <ul class="header_bbox_list1 header_bbox_list3 clearfix">
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">音乐</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">搞笑</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">时尚</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">原创</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">旅游</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">拍客</a></li>
+            </ul>
+            <ul class="header_bbox_list1 header_bbox_list4 clearfix">
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">财经</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">军事</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">科技</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">广告</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">汽车</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">纪录片</a></li>
+            </ul>
+            <ul class="header_bbox_list1 header_bbox_list5 clearfix">
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">风云榜</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">特色频道</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">影视大全</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">爱奇艺出品</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">爱奇艺搜索</a></li>
+              
+            </ul>
+            <ul class="header_bbox_list1 header_bbox_list6 clearfix">
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">游戏中心</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">VIP会员</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">应用商店<i class="header_point2"></i></a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">个人中心</a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">爱奇艺商城<i class="header_point2"></i></a></li>
+              <li class="header_bbox_list1_con2"><a class="header_bbox_list1_link" href="#">开放平台</a></li>
+            </ul>
+      </div>
+   
+   </div>
+  <!--header部分结束-->
+   <div class="main1 clearfix">
+      <div class="main1_l">
+         <h2 class="main1_l_h clearfix">
+            <a class="main1_l_h_link" href="#">今日焦点 <span>更多&gt;</span></a>
+            <a class="main1_l_h_link2" href="#">独播</a>
+         </h2>
+         <h3 class="main1_l_h2 clearfix"><a class="main1_l_h2_link" href="#">2015年放假安排出炉</a> <a class="main1_l_h2_link" href="#">本周迎春运抢票高峰</a></h3>
+         <ul class="main1_l_list clearfix">
+             <li class="main1_l_con">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">全国严查高速路占道行驶</a>&nbsp;
+                 <a class="main1_l_con_link" href="#">高考取消6项鼓励类加分</a>
+             </li>
+             <li class="main1_l_con">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">中纪委曝黑龙江副省级官员喝死陪酒人员现场视频</a>
+                 
+             </li>
+             <li class="main1_l_con">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">释永信将赴泰展演功夫</a>&nbsp;
+                 <a class="main1_l_con_link" href="#">举报者称其有潜逃嫌疑</a>
+                 
+             </li>
+             <li class="main1_l_con">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">中纪委曝黑龙江副省级官员喝死陪酒人员现场视频</a>
+                 
+             </li>
+             <li class="main1_l_con">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">中纪委曝黑龙江副省级官员喝死陪酒人员现场视频</a>
+                 
+             </li>
+             <li class="main1_l_con">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">中纪委曝黑龙江副省级官员喝死陪酒人员现场视频</a>
+                 
+             </li>
+          
+         </ul>
+         <ul class="main1_l_list_2 clearfix">
+             <li class="main1_l_list_2_sp" style="margin-right:20px;">
+                 <a href="#"><img src="img/19.jpg" alt="a" /></a>
+                 <div class="main1_l_list_2_sp_wordbox">
+                     <p class="main1_l_list_2_sp_p"><a class="main1_l_list_2_sp_link" href="#">交警深夜查飙车堪比豪车展</a></p>
+                 </div>
+                 
+             </li>
+             <li class="main1_l_list_2_sp">
+                 <a href="#"><img src="img/19.jpg" alt="a" /></a>
+                 <div class="main1_l_list_2_sp_wordbox">
+                     <p class="main1_l_list_2_sp_p"><a class="main1_l_list_2_sp_link" href="#">交警深夜查飙车堪比豪车展</a></p>
+                 </div>
+                 
+             </li>
+           
+         </ul>
+         
+      </div>
+      <div class="main1_c">
+         <div class="main1_c_t">
+            <a class="main1_c_t_link" href="#">
+               <img src="img/21.jpg" alt="a" />
+               <div class="main1_c_t_opabox">
+                   <div class="main1_c_t_opabg">
+                   </div>
+                   <div class="main1_c_t_opabox_wordbox clearfix">
+                      <i class="main1_c_t_opabg_bf"></i>
+                      <p class="main1_c_t_opabg_word">韩新女团高中庆典表演"仙裙舞"遭民众抨击</p>
+                   </div>
+               </div>
+            </a>
+         </div>
+         <ul class="main1_c_b">
+             <li class="main1_l_con main1_l_con2">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">中纪委曝黑龙江副省级官员喝死陪酒人员现场视频</a>
+                 
+             </li>
+             <li class="main1_l_con main1_l_con2">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">中纪委曝黑龙江副省级官员喝死陪酒人员现场视频</a>
+                 
+             </li>
+             <li class="main1_l_con main1_l_con2">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">中纪委曝黑龙江副省级官员喝死陪酒人员现场视频</a>
+                 
+             </li>
+             <li class="main1_l_con main1_l_con2">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">中纪委曝黑龙江副省级官员喝死陪酒人员现场视频</a>
+                 
+             </li>
+             <li class="main1_l_con main1_l_con2">
+                 <i class="main1_l_con_bg"></i>
+                 <a class="main1_l_con_link" href="#">中纪委曝黑龙江副省级官员喝死陪酒人员现场视频</a>
+                 
+             </li>
+             
+         </ul>
+      </div>
+      <ul class="main1_r">
+          <li class="main1_l_list_2_sp main1_l_list_2_sp2">
+                 <a href="#"><img src="img/19.jpg" alt="a" /></a>
+                 <div class="main1_l_list_2_sp_wordbox">
+                     <p class="main1_l_list_2_sp_p"><a class="main1_l_list_2_sp_link" href="#">交警深夜查飙车堪比豪车展</a></p>
+                 </div>
+                 
+             </li>
+             <li class="main1_l_list_2_sp main1_l_list_2_sp2">
+                 <a href="#"><img src="img/19.jpg" alt="a" /></a>
+                 <div class="main1_l_list_2_sp_wordbox">
+                     <p class="main1_l_list_2_sp_p"><a class="main1_l_list_2_sp_link" href="#">交警深夜查飙车堪比豪车展</a></p>
+                 </div>
+                 
+             </li>
+             <li class="main1_l_list_2_sp main1_l_list_2_sp2">
+                 <a href="#"><img src="img/19.jpg" alt="a" /></a>
+                 <div class="main1_l_list_2_sp_wordbox">
+                     <p class="main1_l_list_2_sp_p"><a class="main1_l_list_2_sp_link" href="#">交警深夜查飙车堪比豪车展</a></p>
+                 </div>
+                 
+             </li>
+      
+      </ul>
+   </div> 
+  <!--footer部分--> 
+   <div class="footer_t">
+      <div class="footer_t_l">
+         <h2 class="footer_t_l_h">
+            <a class="footer_t_l_h_link" href="#">合作伙伴&nbsp;<span>更多&gt;</span></a>
+         </h2>
+         <ul class="footer_t_l_list clearfix">
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">华影公司</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">万达电影网</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">华谊兄弟</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">星美</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">光线影业</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">电影网</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">华策影视</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">百老汇</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">百度视频</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">百度百科</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">hao123</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">百度V计划</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">央广视讯</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">华录百纳</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">百度贴吧</a>
+            </li>
+            <li class="footer_t_l_con">
+                <a class="footer_t_l_list_link" href="#">爱奇艺天猫店</a>
+            </li>
+         </ul>
+      </div>
+      
+      <div class="footer_t_r clearfix">
+         <h2 class="footer_t_l_h">
+            <a class="footer_t_l_h_link" href="#">爱奇艺动态&nbsp;<span>更多&gt;</span></a>
+         </h2>
+          <ul class="footer_t_l_list clearfix">
+            <li class="footer_t_l_con footer_t_l_con2">
+                <a class="footer_t_l_list_link" href="#">爱奇艺获小米、百度战略投资</a>
+            </li>
+            <li class="footer_t_l_con footer_t_l_con2">
+                <a class="footer_t_l_list_link" href="#">与杜比战略合作深化</a>
+            </li>
+            <li class="footer_t_l_con footer_t_l_con2">
+                <a class="footer_t_l_list_link" href="#">7月视频市场 爱奇艺稳居冠军</a>
+            </li>
+            <li class="footer_t_l_con footer_t_l_con2">
+                <a class="footer_t_l_list_link" href="#">爱奇艺、华策影视成立合资公司</a>
+            </li>
+            <li class="footer_t_l_con footer_t_l_con2">
+                <a class="footer_t_l_list_link" href="#">移动视频期中盘点</a>
+            </li>
+            <li class="footer_t_l_con footer_t_l_con2">
+                <a class="footer_t_l_list_link" href="#">爱奇艺拉开2015视频营销会大幕</a>
+            </li>
+           
+            
+         </ul>
+        
+      </div>
+   
+   </div>
+   <div class="footer_b">
+     
+      <div class="footer_b_t_p clearfix">
+          <a class="footer_b_t_link" href="#">应用商店</a>
+          <i class="footer_b_t_i">|</i>
+          <a class="footer_b_t_link" href="#">公司介绍</a>
+          <i class="footer_b_t_i">|</i>
+          <a class="footer_b_t_link" href="#">新闻动态</a>
+          <i class="footer_b_t_i">|</i>
+          <a class="footer_b_t_link" href="#">练习方式</a>
+          <i class="footer_b_t_i">|</i>
+          <a class="footer_b_t_link" href="#">招聘英才</a>
+          <i class="footer_b_t_i">|</i>
+          <a class="footer_b_t_link" href="#">开放平台</a>
+          <i class="footer_b_t_i">|</i>
+          <a class="footer_b_t_link" href="#">帮助与反馈</a>
+          <i class="footer_b_t_i">|</i>
+          <a class="footer_b_t_link" href="#">About Us</a>
+      </div>
+    
+      <p class="footer_b_t_p2">
+         违法和不良信息举报电话：400-800-7171&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 举报邮箱：jubao365@qiyi.com
+      </p>
+      <ul class="footer_b_t_list clearfix">
+         <li class="footer_b_t_con">
+            <p class="footer_b_t_con_p1 clearfix"><i class="footer_b_t_con_i1"></i><a class="footer_b_t_con_a" href="#">中国互联网诚信联盟</a></p>
+            <p class="footer_b_t_con_p2 clearfix"><i class="footer_b_t_con_i2"></i><a class="footer_b_t_con_a" href="#">经营性网站备案信息</a></p>
+         </li>
+         
+         <li class="footer_b_t_con">
+            <p class="footer_b_t_con_p1 clearfix"><a class="footer_b_t_con_a" href="#">京网文[2012]0484-158号</a></p>
+            <p class="footer_b_t_con_p2 clearfix"><a class="footer_b_t_con_a" href="#">京ICP证110636号</a></p>
+         </li>
+         <li class="footer_b_t_con">
+            <p class="footer_b_t_con_p1 clearfix"><a class="footer_b_t_con_a" href="#">互联网违法和不良信息举报中心</a></p>
+            <p class="footer_b_t_con_p2 clearfix">京公网安备 11010802010263号</p>
+         </li>
+         <li class="footer_b_t_con">
+            <p class="footer_b_t_con_p1 clearfix"><a class="footer_b_t_con_a" href="#">信息网络传播视听节目许可证 0110544号</a></p>
+            <p class="footer_b_t_con_p2 clearfix"><a class="footer_b_t_con_a" href="#">增值电信业务经营许可证 B2-20120273</a></p>
+         </li>
+         <li class="footer_b_t_con" style=" margin-right:0px;">
+            <p class="footer_b_t_con_p1 clearfix"><a class="footer_b_t_con_a" href="#">广播电视节目制作经营许可证 (京)字第1938号</a></p>
+            <p class="footer_b_t_con_p2 clearfix"><a class="footer_b_t_con_a" href="#">互联网药品信息服务资格证书 (京)-经营性-2013-0012</a></p>
+         </li>
+      </ul>
+      <p class="footer_b_t_p_last">Copyright © 2015 爱奇艺 All Rights Reserved</p>
+      
+      
+   </div>
+  
+</body>
+</html>

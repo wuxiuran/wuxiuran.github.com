@@ -1,0 +1,27 @@
+/*
+智能社© - http://www.zhinengshe.com/
+
+微博：@北京智能社
+微信：zhi_neng_she
+
+最具深度的前端开发培训机构 HTML+CSS/JS/HTML5
+*/
+
+
+@charset "utf-8";
+/* CSS Document */
+
+* { padding: 0; margin: 0; }
+li { list-style: none; }
+body { background:#003; }
+img { border: none; }
+
+.date { width: 520px; height: 520px; margin: 50px auto 0; position: relative; }
+.date h2 { text-align: center; padding: 80px 0 30px; }
+.year { text-align: center; padding-top: 30px; }
+.time { text-align: center; padding: 30px 0; }
+.url { text-align: center; position: absolute; bottom: 40px; left: 160px; }
+.date img { position: relative; }
+.pos2 { margin-left: 10px; }
+.num { width: 25px; }
+.num2 { width: 38px; }

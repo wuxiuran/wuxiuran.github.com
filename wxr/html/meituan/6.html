@@ -1,0 +1,3416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/base.css" />
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/index.js"></script>
+<script>
+$(function (){
+	zns.public.client();
+	zns.public.topBanner();
+	zns.public.searchBox();
+	zns.index.banner();
+	zns.index.leftNav();
+	zns.public.clientTotop();
+});
+
+</script>
+</head>
+
+<body>
+<!--右下角可视区-->
+
+<div class="fixed_rb_box">
+	
+		<a class="fixed_rb_box_a fixed_rb_box_a1 j_to_top" href="javascript:;"></a>
+	
+	
+		<a class="fixed_rb_box_a fixed_rb_box_a2" href="javascript:;"></a>
+	
+	
+		<a class="fixed_rb_box_a fixed_rb_box_a3" href="javascript:;"></a>
+	
+	
+		<a class="fixed_rb_box_a fixed_rb_box_a4" href="javascript:;"></a>
+	
+</div>
+
+<!--右下角可视区结束-->
+
+<!--左下角可视区-->
+
+<a id="j_lb_box_start" class="fixed_lb_box_start" href="javascript:;"></a>
+<div id="j_lb_box_end" class="fixed_lb_box_end">
+	<div class="fixed_lb_box_end_opa">
+		<a id="j_lb_box_close" class="fixed_lb_box_end_close" href="javascript:;"></a>
+	</div>
+	<img src="img/new_year.png" />
+	
+</div>
+
+<!--左下角可视区结束-->
+
+<div class="header_top">
+	<div class="header_topbox clearfix">
+		<ul class="header_left_list clearfix">
+		
+			<li class="header_topbox_list1">
+				<a href="#" class="header_topbox_link1 clearfix">
+					<i></i>
+					收藏美团
+				</a>
+			</li>
+			
+			<li class="header_topbox_list1 clearfix">
+				<a class="header_login" href="#">登陆</a>
+				<a class="header_regsiter" href="#">注册</a>
+			</li>
+			
+			<li class="header_topbox_list2">
+				<a class="header_phone_link" href="#">
+					<i class="header_phone_link_phonebg"></i>
+					手机美团
+					<i class="header_phone_link_downbg"></i>
+				</a>
+				
+				
+				<!--JS隐藏块~-->
+				<div></div>
+				
+				
+			</li>
+			
+		</ul>
+		
+		
+		<ul class="header_right_list clearfix">
+			<li class="header_topbox_list3">
+				<a href="#">我的订单</a>
+			</li>
+			
+			<li class="header_topbox_list4">
+				<a class="header_topbox_list4_link" href="#">
+					我的美团
+					<i class="header_topbox_list4_link_i1"></i>
+					<i class="header_topbox_list4_link_i2"></i>
+				</a>
+				
+			</li>
+			<li class="header_topbox_list4">
+				<a class="header_topbox_list4_link" href="#">
+					最近浏览
+					<i class="header_topbox_list4_link_i1"></i>
+					<i class="header_topbox_list4_link_i2"></i>
+				</a>
+				
+			</li>
+			<li class="header_topbox_list4">
+				<a class="header_topbox_list4_link" style="padding-left:34px;" href="#">
+					购物车<span>0</span>件
+					<i class="header_topbox_list4_link_buycar"></i>
+					<i class="header_topbox_list4_link_i1"></i>
+					<i class="header_topbox_list4_link_i2"></i>
+				</a>
+				
+			</li>
+			<li class="header_topbox_list4">
+				<a class="header_topbox_list4_link" href="#">
+					联系客服
+					<i class="header_topbox_list4_link_i1"></i>
+					<i class="header_topbox_list4_link_i2"></i>
+				</a>
+				
+			</li>
+			<li class="header_topbox_list4">
+				<a class="header_topbox_list4_link" href="#">
+					我是商家
+					<i class="header_topbox_list4_link_i1"></i>
+					<i class="header_topbox_list4_link_i2"></i>
+				</a>
+				
+			</li>
+			<li class="header_topbox_list4">
+				<a class="header_topbox_list4_link" href="#">
+					更多
+					<i class="header_topbox_list4_link_i1"></i>
+					<i class="header_topbox_list4_link_i2"></i>
+				</a>
+				
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- 头部广告-->
+<div id="header_topbanner" class="header_topbanner">
+	<a class="header_topbanner_a1" href="#"></a>
+	<a id="header_topbanner_closed" class="header_topbanner_closed" href="javascript:;"></a>
+</div>
+<!-- logo-->
+<div class="header_hBox">
+	<h1 class="header_logo">
+		<a class="header_logo_link" href="#">
+			美团网
+		</a>
+	</h1>
+	<div class="header_h2box">
+		<h2 class="header_h2box_h2">
+			<a class="header_h2box_h2_a" href="#">北京</a>
+		</h2>
+		<a class="header_h2box_citylink" href="#">切换城市</a>
+	</div>
+	
+	
+	<div class="header_searchbox">
+		<form action="#" class="clearfix">
+			<div class="header_searchbox_sel">
+				<select id="header_search" style="display:none;">
+					<option value="团购">团购</option>
+					<option value="商家">商家</option>
+				</select>
+				<a class="header_searchbox_sel_a1" href="javascript:;">
+					<span>团购</span>
+					<i></i>
+					<!--<b class="header_searchbox_sel_a1_b">
+						<span id="search_selected"></span>
+						<span id="search_select"></span>
+					</b>-->
+				</a>
+			</div>
+			<input type="text" name="keyword" class="header_search_text" placeholder="请输入商品名称、地址等" />
+			<input type="submit"  value="搜索" class="header_search_btn" />
+		</form>
+	</div>
+	
+	<a class="header_service" href="#">
+	
+	</a>
+</div>
+
+<!-- 头部结束-->
+
+<div class="nav_box clearfix">
+	<div class="nav_left">
+		<h3>全部分类</h3>
+		<div class="nav_left_pos_father j_nav_left_pos_father">
+			<ul>
+				<li class="j_nav_left">
+					<div class="clearfix nav_left_h">
+						<a class="nav_left_h_h" href="#">美食</a>
+					</div>
+					<p class="nav_left_h_sonh">
+							<a href="#">自助餐</a>
+							<a href="#">代金券</a>
+						</p>
+					<i></i>
+				</li>
+				<li class="j_nav_left">
+					<div class="clearfix nav_left_h">
+						<a class="nav_left_h_h" href="#">酒店</a>
+						<span class="nav_left_h_h">/</span>
+						<a class="nav_left_h_h" href="#">客栈</a>
+					</div>
+					<p class="nav_left_h_sonh">
+							<a href="#">经济型酒店</a>
+						</p>
+					<i></i>
+				</li>
+				<li class="j_nav_left">
+					<div class="clearfix nav_left_h">
+						<a class="nav_left_h_h" href="#">电影</a>
+						<span class="nav_left_h_h">/</span>
+						<a class="nav_left_h_h" href="#">在线选座</a>
+					</div>
+					<i></i>
+				</li>
+				<li class="j_nav_left">
+					<div class="clearfix nav_left_h">
+						<a class="nav_left_h_h" href="#">KTV</a>
+						<span class="nav_left_h_h">/</span>
+						<a class="nav_left_h_h" href="#">在线预定</a>
+					</div>
+					
+				</li>
+				<li class="j_nav_left">
+					<div class="clearfix nav_left_h">
+						<a class="nav_left_h_h" href="#">休闲娱乐</a>
+						
+					</div>
+					<p class="nav_left_h_sonh">
+							<a href="#">足疗按摩</a>
+							<a href="#">温泉</a>
+						</p>
+					<i></i>
+				</li>
+				<li class="j_nav_left">
+					<div class="clearfix nav_left_h">
+						<a class="nav_left_h_h" href="#">周边游</a>
+						<span class="nav_left_h_h">/</span>
+						<a class="nav_left_h_h" href="#">旅游</a>
+					</div>
+					<i></i>
+				</li>
+				<li class="j_nav_left">
+					<div class="clearfix nav_left_h">
+						<a class="nav_left_h_h" href="#">生活服务</a>
+						
+					</div>
+					<p class="nav_left_h_sonh">
+							<a href="#">婚纱摄影</a>
+							<a href="#">个性写真</a>
+						</p>
+					<i></i>
+				</li>
+				<li class="j_nav_left">
+					<div class="clearfix nav_left_h">
+						<a class="nav_left_h_h" href="#">购物</a>
+						
+					</div>
+					<p class="nav_left_h_sonh">
+							<a href="#">男装</a>
+							<a href="#">女装</a>
+						</p>
+					<i></i>
+				</li>
+				<li class="j_nav_left">
+					<div class="clearfix nav_left_h">
+						<a class="nav_left_h_h" href="#">丽人</a>
+					</div>
+					<i></i>
+				</li>
+			</ul>
+			<div class="nav_left_hide j_nav_left_hide clearfix"></div>
+		</div>
+	</div>
+	
+	<div class="nav_right">
+		<div class="nav_right_top">
+			<ul class="clearfix">
+				<li class="nav_right_top_list">
+					<a class="nav_right_top_list_link" href="#">首页</a>
+				</li>
+				<li class="nav_right_top_list">
+					<a class="nav_right_top_list_link" href="#">今日新单</a>
+				</li>
+				<li class="nav_right_top_list">
+					<a class="nav_right_top_list_link" href="#">购物</a>
+				</li>
+				<li class="nav_right_top_list">
+					<a class="nav_right_top_list_link" href="#">身边外卖</a>
+				</li>
+				<li class="nav_right_top_list">
+					<a class="nav_right_top_list_link" href="#">名店抢购</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="nav_right_bottom clearfix">
+				
+			<div class="nav_center">
+				<div class="nav_center_top">
+					<div class="nav_center_top_box clearfix">
+						<i class="nav_center_top_box_bg1"></i>
+						<h3 class="nav_center_top_h">热门团购</h3>
+						<a class="nav_center_top_link2" href="#">代金券</a>
+						<a class="nav_center_top_link2" href="#">经济型酒店</a>
+						<a class="nav_center_top_link2" href="#">电影</a>
+						<a class="nav_center_top_link1" href="#">婚纱摄影</a>
+						<a class="nav_center_top_link1" href="#">美发</a>
+						<a class="nav_center_top_link1" href="#">足疗按摩</a>
+						<a class="nav_center_top_link1" href="#">蛋糕甜点</a>
+						<a class="nav_center_top_link2" href="#">火锅</a>
+						<a class="nav_center_top_link1" href="#">儿童摄影</a>
+					</div>
+					<div class="nav_center_top_box clearfix">
+						<i class="nav_center_top_box_bg2"></i>
+						<h3 class="nav_center_top_h">全部区域</h3>
+						<a class="nav_center_top_link1" href="#">朝阳区</a>
+						<a class="nav_center_top_link1" href="#">海淀区</a>
+						<a class="nav_center_top_link1" href="#">丰台区</a>
+						<a class="nav_center_top_link1" href="#">西城区</a>
+						<a class="nav_center_top_link1" href="#">东城区</a>
+						<a class="nav_center_top_link1" href="#">昌平区</a>
+						<a class="nav_center_top_link1" href="#">石景山区</a>
+						<a class="nav_center_top_link1" href="#">通州区</a>
+						<a class="nav_center_top_link1" href="#">大兴区</a>
+					</div>
+					<div class="nav_center_top_box clearfix">
+						<i class="nav_center_top_box_bg3"></i>
+						<h3 class="nav_center_top_h">热门商圈</h3>
+						<a class="nav_center_top_link1" href="#">望京</a>
+						<a class="nav_center_top_link1" href="#">昌平镇</a>
+						<a class="nav_center_top_link1" href="#">亦庄</a>
+						<a class="nav_center_top_link1" href="#">中关村</a>
+						<a class="nav_center_top_link1" href="#">远大路</a>
+						<a class="nav_center_top_link1" href="#">西红门</a>
+						<a class="nav_center_top_link1" href="#">双井</a>
+						<a class="nav_center_top_link1" href="#">大望路</a>
+						<a class="nav_center_top_link1" href="#">黄村</a>
+						<a class="nav_center_top_link1" href="#">牡丹园/北太平庄</a>
+					</div>
+				</div>
+				<div id="nav_center_bottom" class="nav_center_bottom">
+					<ul id="nav_center_banner"  class="nav_center_bottom_box clearfix">
+						<li class="nav_center_list j_nav_center_list clearfix">
+							<div class="nav_center_list_left">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>5.7</i>
+									</div>
+									<img src="img/399a231febb08c6acbbfbc229812699397528.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+							
+							<div class="nav_center_list_right">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>8.9</i>
+									</div>
+									<img src="img/93e5ede30d6c14072951a96e1d69239b45688.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li class="nav_center_list j_nav_center_list clearfix">
+							<div class="nav_center_list_left">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>5.7</i>
+									</div>
+									<img src="img/14b0c9c33f9549589e868eefa8dc5a9535569 (1).jpg@0_22_720_436a-388h_640w_2e_90q.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+							
+							<div class="nav_center_list_right">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>8.9</i>
+									</div>
+									<img src="img/8dd96dc770c5a5f9b11cb9b29801d63664406.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li class="nav_center_list j_nav_center_list clearfix">
+							<div class="nav_center_list_left">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>5.7</i>
+									</div>
+									<img src="img/7c5387150a43d451f2e18c69b2300533385556.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+							
+							<div class="nav_center_list_right">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>8.9</i>
+									</div>
+									<img src="img/09131f9b07569780ad8a8908c12a8ddd138334.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li class="nav_center_list j_nav_center_list clearfix">
+							<div class="nav_center_list_left">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>5.7</i>
+									</div>
+									<img src="img/86e8347635fd4bf9373cfc0561b57aa3233734.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+							
+							<div class="nav_center_list_right">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>8.9</i>
+									</div>
+									<img src="img/732623827e138be7166187bf7217b8de85780.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li class="nav_center_list j_nav_center_list clearfix">
+							<div class="nav_center_list_left">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>5.7</i>
+									</div>
+									<img src="img/75263af32e252b12b300c3c5a802260e304778.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+							
+							<div class="nav_center_list_right">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>8.9</i>
+									</div>
+									<img src="img/__37526989__7384294.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li class="nav_center_list j_nav_center_list clearfix">
+							<div class="nav_center_list_left">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>5.7</i>
+									</div>
+									<img src="img/732623827e138be7166187bf7217b8de85780.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+							
+							<div class="nav_center_list_right">
+								<a class="nav_center_list_word_left_h_a" href="#">
+									<div class="price_war">
+										<i>8.9</i>
+									</div>
+									<img src="img/cc459e2a03f0ad88836745ca7a7956d5109979.jpg" />
+								</a>
+								<div class="nav_center_list_word clearfix">
+									<div class="nav_center_list_word_left">
+										<p class="nav_center_list_word_left_h">
+											<a href="#">
+												慕蓝卡烘培
+											</a>
+										</p>
+										<p class="nav_center_list_word_left_cont">
+											现烤葡式蛋挞1份，包间免费，提供免...
+										</p>
+									</div>
+									<div class="nav_center_list_price">
+										￥1.99
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<a class="nav_center_bottom_toleft" href="javascript:;"></a>
+					<a class="nav_center_bottom_toright" href="javascript:;">
+						<span class="nav_center_bottom_toright_word">1/6</span>
+					</a>
+				</div>
+			</div>
+		
+			<div class="nav_right_bottom_right">
+				<div class="nav_right_bottom_right_phonedown">
+				</div>
+				<div class="nav_right_bottom_right_b">
+					<p class="nav_right_bottom_right_b_p1">
+						<a href="#">
+							每日上新
+						</a>
+					</p>
+					<p class="nav_right_bottom_right_b_p2">
+						<a href="#">
+							吃喝玩乐最低价
+						</a>
+					</p>
+					<a class="nav_right_bottom_right_b_piclink" href="#">
+						<img src="img/a90e6f506f86cb29f4b4eb70a628ccba37411.png" />
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		
+	
+	</div>
+	
+</div>
+
+<!-- 导航结束-->
+
+<!--第一部分-->
+
+<div class="main1">
+	<div class="main1_top">
+		<a class="main1_top_h clearfix" href="#">
+			<i class="main1_top_h_bg"></i>
+			<span class="main1_top_h_word">名店抢购</span>
+		</a>
+	</div>
+	<ul class="main1_tab clearfix">
+		<li class="main1_tab_list">
+			<div class="main1_tab_list_box clearfix">
+			
+			
+				<div class="main1_tab_list_cont">
+					<a class="main1_tab_list_cont_pic_link" href="#">
+						<div class="main1_tab_list_cont_pic_link_pos_money"></div>
+						<img src="img/4db1933f3bb915a8bedd58c8ed044798135993.jpg" />
+					</a>
+					<div class="main1_tab_list_cont_word_box">
+						<a class="main1_tab_list_cont_word_link" href="#">【7店通用】松子日本料理</a>
+						<div class="main1_tab_list_cont_word_price clearfix">
+							<span>¥95</span>
+							<i>已售35532</i> 
+						</div>
+					</div>
+					<div class="main1_tab_list_cont_bottom clearfix">
+						<p class="main1_tab_list_cont_bottom_word">
+							手机购买立减￥5
+						</p>
+					</div>
+				</div>
+				
+				<div class="main1_tab_list_cont">
+					<a class="main1_tab_list_cont_pic_link" href="#">
+						<img src="img/4db1933f3bb915a8bedd58c8ed044798135993.jpg" />
+					</a>
+					<div class="main1_tab_list_cont_word_box">
+						<a class="main1_tab_list_cont_word_link" href="#">【7店通用】松子日本料理</a>
+						<div class="main1_tab_list_cont_word_price clearfix">
+							<span>¥95</span>
+							<i>已售35532</i> 
+						</div>
+					</div>
+					<div class="main1_tab_list_cont_bottom clearfix">
+						<p class="main1_tab_list_cont_bottom_word">
+							手机购买立减￥5
+						</p>
+					</div>
+				</div>
+				
+				<div class="main1_tab_list_cont">
+					<a class="main1_tab_list_cont_pic_link" href="#">
+						<div class="main1_tab_list_cont_pic_link_pos_money"></div>
+						<img src="img/4db1933f3bb915a8bedd58c8ed044798135993.jpg" />
+					</a>
+					<div class="main1_tab_list_cont_word_box">
+						<a class="main1_tab_list_cont_word_link" href="#">【7店通用】松子日本料理</a>
+						<div class="main1_tab_list_cont_word_price clearfix">
+							<span>¥95</span>
+							<i>已售35532</i> 
+						</div>
+					</div>
+					<div class="main1_tab_list_cont_bottom clearfix">
+						<p class="main1_tab_list_cont_bottom_word">
+							手机购买立减￥5
+						</p>
+					</div>
+				</div>
+				
+				<div class="main1_tab_list_cont">
+					<a class="main1_tab_list_cont_pic_link" href="#">
+						<img src="img/4db1933f3bb915a8bedd58c8ed044798135993.jpg" />
+					</a>
+					<div class="main1_tab_list_cont_word_box">
+						<a class="main1_tab_list_cont_word_link" href="#">【7店通用】松子日本料理</a>
+						<div class="main1_tab_list_cont_word_price clearfix">
+							<span>¥95</span>
+							<i>已售35532</i> 
+						</div>
+					</div>
+					<div class="main1_tab_list_cont_bottom clearfix">
+						<p class="main1_tab_list_cont_bottom_word">
+							手机购买立减￥5
+						</p>
+					</div>
+				</div>
+				
+				<div class="main1_tab_list_cont">
+					<a class="main1_tab_list_cont_pic_link" href="#">
+						<img src="img/4db1933f3bb915a8bedd58c8ed044798135993.jpg" />
+					</a>
+					<div class="main1_tab_list_cont_word_box">
+						<a class="main1_tab_list_cont_word_link" href="#">【7店通用】松子日本料理</a>
+						<div class="main1_tab_list_cont_word_price clearfix">
+							<span>¥95</span>
+							<i>已售35532</i> 
+						</div>
+					</div>
+					<div class="main1_tab_list_cont_bottom clearfix">
+						<p class="main1_tab_list_cont_bottom_word">
+							手机购买立减￥5
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<!--第二部分-->
+
+<div class="main2">
+	<h2 class="main2_h clearfix">
+		<a class="main2_h_link clearfix" href="#">
+			<i></i>
+			<span>
+				美食
+			</span>
+		</a>
+		<ul class="main2_h_list clearfix">
+			<li>
+				<a class="main2_h_list_link" href="#">
+					美食
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					代金券
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					自助餐
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					火锅
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					烧烤烤肉
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					香锅烤鱼
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					西餐
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_lastlink" href="#">
+					全部
+					<i></i>
+				</a>
+			</li>
+		</ul>
+	</h2>
+	
+	<ul class="main2_cont clearfix">
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />
+			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+	</ul>
+	<div class="main2_footer">
+		<a class="main2_footer_link" href="#">
+			更多美团购，请点击查看<span></span>
+		</a>
+	</div>
+</div>
+
+
+<div class="main3">
+	<h2 class="main2_h clearfix">
+		<a class="main2_h_link main3_h_link clearfix" href="#">
+			<i></i>
+			<span>
+				休闲娱乐
+			</span>
+		</a>
+		<ul class="main2_h_list clearfix">
+			<li>
+				<a class="main2_h_list_link" href="#">
+					休闲娱乐
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					运动健身
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					足疗按摩
+				</a>
+			</li>
+			
+			<li>
+				<a class="main2_h_list_lastlink" href="#">
+					全部
+					<i></i>
+				</a>
+			</li>
+		</ul>
+	</h2>
+	
+	<ul class="main3_cont">
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+	</ul>
+	
+	<div class="main2_footer">
+		<a class="main2_footer_link" href="#">
+			更多美团购，请点击查看<span></span>
+		</a>
+	</div>
+</div>
+
+
+<div class="main4">
+	<h2 class="main2_h clearfix">
+		<a class="main2_h_link main4_h_link clearfix" href="#">
+			<i></i>
+			<span>
+				电影
+			</span>
+		</a>
+		<ul class="main2_h_list clearfix">
+			<li>
+				<a class="main2_h_list_link" href="#">
+					电影
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					电影票团购
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					电影院
+				</a>
+			</li>
+			
+			<li>
+				<a class="main2_h_list_link" href="#">
+					在线选座
+				</a>
+			</li>
+			
+			<li>
+				<a class="main2_h_list_link" href="#">
+					最新电影
+				</a>
+			</li>
+
+
+			<li>
+				<a class="main2_h_list_lastlink" href="#">
+					全部
+					<i></i>
+				</a>
+			</li>
+		</ul>
+	</h2>
+	
+	<ul class="main4_cont clearfix">
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+	</ul>
+	
+	<div class="main2_footer">
+		<a class="main2_footer_link" href="#">
+			更多美团购，请点击查看<span></span>
+		</a>
+	</div>
+</div>
+
+
+<div class="main5">
+	<h2 class="main2_h clearfix">
+		<a class="main2_h_link main5_h_link clearfix" href="#">
+			<i></i>
+			<span>
+				酒店
+			</span>
+		</a>
+		<ul class="main2_h_list clearfix">
+			<li>
+				<a class="main2_h_list_link" href="#">
+					酒店
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					经济型酒店
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					主题酒店
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					豪华酒店
+				</a>
+			</li>
+			
+			<li>
+				<a class="main2_h_list_lastlink" href="#">
+					全部
+					<i></i>
+				</a>
+			</li>
+		</ul>
+	</h2>
+	
+	<ul class="main5_cont clearfix">
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+	</ul>
+	
+	<div class="main2_footer">
+		<a class="main2_footer_link" href="#">
+			更多美团购，请点击查看<span></span>
+		</a>
+	</div>
+</div>
+
+
+<div class="main6">
+	<h2 class="main2_h clearfix">
+		<a class="main2_h_link main6_h_link clearfix" href="#">
+			<i></i>
+			<span>
+				生活服务
+			</span>
+		</a>
+		<ul class="main2_h_list clearfix">
+			<li>
+				<a class="main2_h_list_link" href="#">
+					生活服务
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					培训课程
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					母婴亲子
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					配镜
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					其他摄影
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					汽车服务
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					体检保险
+				</a>
+			</li>
+			
+			<li>
+				<a class="main2_h_list_lastlink" href="#">
+					全部
+					<i></i>
+				</a>
+			</li>
+		</ul>
+	</h2>
+	
+	<ul class="main6_cont clearfix">
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+	</ul>
+	
+	<div class="main2_footer">
+		<a class="main2_footer_link" href="#">
+			更多美团购，请点击查看<span></span>
+		</a>
+	</div>
+</div>
+
+
+<div class="main7">
+	<h2 class="main2_h clearfix">
+		<a class="main2_h_link main7_h_link clearfix" href="#">
+			<i></i>
+			<span>
+				购物
+			</span>
+		</a>
+		<ul class="main2_h_list clearfix">
+			<li>
+				<a class="main2_h_list_link" href="#">
+					购物
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					女装
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					男装
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					内衣
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					女生鞋包
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					家居用品
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					食品
+				</a>
+			</li>
+			
+			<li>
+				<a class="main2_h_list_lastlink" href="#">
+					全部
+					<i></i>
+				</a>
+			</li>
+		</ul>
+	</h2>
+	
+	<ul class="main7_cont clearfix">
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+	</ul>
+	
+	<div class="main2_footer">
+		<a class="main2_footer_link" href="#">
+			更多美团购，请点击查看<span></span>
+		</a>
+	</div>
+</div>
+
+
+<div class="main8">
+	<h2 class="main2_h clearfix">
+		<a class="main2_h_link main8_h_link clearfix" href="#">
+			<i></i>
+			<span>
+				丽人
+			</span>
+		</a>
+		<ul class="main2_h_list clearfix">
+			<li>
+				<a class="main2_h_list_link" href="#">
+					丽人
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					美发
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					美容美体
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					美甲
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					瑜伽/舞蹈
+				</a>
+			</li>
+			
+			
+			<li>
+				<a class="main2_h_list_lastlink" href="#">
+					全部
+					<i></i>
+				</a>
+			</li>
+		</ul>
+	</h2>
+	
+	<ul class="main8_cont clearfix">
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+	</ul>
+	
+	<div class="main2_footer">
+		<a class="main2_footer_link" href="#">
+			更多美团购，请点击查看<span></span>
+		</a>
+	</div>
+</div>
+
+
+<div class="main9">
+	<h2 class="main2_h clearfix">
+		<a class="main2_h_link main9_h_link clearfix" href="#">
+			<i></i>
+			<span>
+				旅游
+			</span>
+		</a>
+		<ul class="main2_h_list clearfix">
+			<li>
+				<a class="main2_h_list_link" href="#">
+					旅游
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					景点门票
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					国内游
+				</a>
+			</li>
+			<li>
+				<a class="main2_h_list_link" href="#">
+					境外游
+				</a>
+			</li>
+						
+			<li>
+				<a class="main2_h_list_lastlink" href="#">
+					全部
+					<i></i>
+				</a>
+			</li>
+		</ul>
+	</h2>
+	
+	<ul class="main9_cont clearfix">
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+		
+		<li class="main2_cont_list">
+			<a class="main2_cont_list_pic_link" href="#">
+				<img src="img/fc54561ba467257c85b470e2a37ac899106396.jpg" />			</a>
+			<a class="main2_cont_list_word_link" href="#">
+				<span>【4店通用】戈拿旺巴西烤肉</span>
+				<i>戈拿旺巴西烤肉,提供免费WIFI</i>
+			</a>
+			<p class="main2_cont_list_word_cont clearfix">
+				<span class="main2_cont_list_word_cont_s1">
+					¥88
+				</span>
+				<span class="main2_cont_list_word_cont_s2">
+					门店价<i>¥98</i>
+				</span>
+				<span class="main2_cont_list_word_cont_s3">
+					已售14013
+				</span>
+			</p>
+			<div class="main2_cont_list_bottom clearfix">
+				<a class="main2_cont_list_bottom_link" href="#">
+					<span></span>
+					722人评价
+				</a>
+			</div>
+		</li>
+	</ul>
+	
+	<div class="main2_footer">
+		<a class="main2_footer_link" href="#">
+			更多美团购，请点击查看<span></span>
+		</a>
+	</div>
+</div>
+
+
+<div class="footer_middle clearfix">
+	<div class="footer_middle_listbox clearfix">
+		<dl>
+			<dt>获取更新</dt>
+			<dd><a href="#">邮件订阅</a></dd>
+			<dd><a href="#">iPhone/Android</a></dd>
+			<dd><a href="#">美团QQ空间</a></dd>
+			<dd><a href="#">美团新浪微博</a></dd>
+			<dd><a href="#">sitemap</a></dd>
+			<dd><a href="#">RSS订阅</a></dd>
+		</dl>
+		
+		<dl>
+			<dt>商家合作</dt>
+			<dd><a href="#">商家合作</a></dd>
+			<dd><a href="#">美团商家营销平台</a></dd>
+			<dd><a href="#">市场合作</a></dd>
+			<dd><a href="#">美团联盟</a></dd>
+			<dd><a href="#">美团云</a></dd>
+			<dd><a href="#">廉正邮箱</a></dd>
+		</dl>
+		
+		<dl>
+			<dt>公司信息</dt>
+			<dd><a href="#">关于美团</a></dd>
+			<dd><a href="#">美团承诺</a></dd>
+			<dd><a href="#">媒体报道</a></dd>
+			<dd><a href="#">加入我们</a></dd>
+			<dd><a href="#">法律声明</a></dd>
+			<dd><a href="#">用户协议</a></dd>
+		</dl>
+		
+		<dl>
+			<dt>用户帮助</dt>
+			<dd><a href="#">申请退款</a></dd>
+			<dd><a href="#">查看美团券密码</a></dd>
+			<dd><a href="#">常见问题</a></dd>
+			<dd><a href="#">开放API</a></dd>
+			<dd><a href="#">反诈骗公告</a></dd>
+		</dl>
+	</div>
+	
+	<div class="footer_service_box">
+		<div class="footer_service_box_logo"></div>
+		<p class="footer_service_box_p1">客服电话</p>
+		<p class="footer_service_box_p2">400-660-5335<span>(9:00-23:00)</span></p>
+		<p class="footer_service_box_p3">退款、退换货、查看美团券</p>
+		<p class="footer_service_box_p4"><a href="#">参考教材，轻松搞定！</a></p>
+	</div>
+</div>
+
+<div class="footer_bottom">
+	<p class="footer_bottom_p">
+		©2015<a href="#">美团网团购</a> meituan.com <a href="#">京ICP证070791号</a> 京公网安备11010502025545号 <a href="#">电子公告服务规则</a>
+	</p>
+	<div class="footer_bottom_copyright">
+		<a class="footer_bottom_copyright_a1" href="#"></a>
+		<a class="footer_bottom_copyright_a2" href="#"></a>
+		<a class="footer_bottom_copyright_a3" href="#"></a>
+		<a class="footer_bottom_copyright_a4" href="#"></a>
+		<a class="footer_bottom_copyright_a5" href="#"></a>
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

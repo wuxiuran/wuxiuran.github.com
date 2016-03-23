@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+div{ width:700px; height:400px; position:absolute; top:50%; left:50%; margin-left:-350px; margin-top:-200px; background:url(img/1.jpg) no-repeat; transform-style:preserve-3d;}
+div span{ transform: perspective(800px) translate(0px,0px)  rotateX(0deg) rotateY(0deg); transition:0.6s all ease; opacity:1;}
+</style>
+<script>
+window.onload=function (){
+	var oBox=document.getElementById('box');
+	var iNow=0;
+	var row=4;
+	var C=7;
+	var xArr=[];
+	var yArr=[];
+	var bFlag=false;
+	for(var r=0; r<row; r++)
+	{
+		for(var c=0; c<C; c++)
+		{
+			var oSpan=document.createElement('span');
+			
+			oSpan.style.position='absolute';
+			
+			oSpan.style.width=oBox.offsetWidth/C+'px';
+			oSpan.style.height=oBox.offsetHeight/row+'px';
+			
+			
+			
+			oSpan.style.left=oBox.offsetWidth/C*c+'px';
+			oSpan.style.top=oBox.offsetHeight/row*r+'px';
+			
+			oSpan.style.background='url(img/'+iNow%3+'.jpg) no-repeat';
+			xArr.push(oBox.offsetWidth/C*c);
+			yArr.push(oBox.offsetHeight/row*r);
+			oSpan.style.backgroundPosition='-'+oBox.offsetWidth/C*c+'px -'+oBox.offsetHeight/row*r+'px';
+			oSpan.style.transform='perspective(800px) translate(0px,0px) rotateX(0deg) rotateY(0deg)';
+			oBox.appendChild(oSpan);
+		}
+	}
+	
+	var aSpan=oBox.children;
+	document.onclick=function (){
+		console.log(bFlag);
+		if(bFlag)return;
+		bFlag=true;
+		iNow++;
+		oBox.style.background='url(img/'+iNow%3+'.jpg) no-repeat';
+		for(var i=0; i<aSpan.length; i++)
+		{
+			aSpan[i].style.transition='0.4s all ease';
+			
+			var x=aSpan[i].offsetLeft+aSpan[i].offsetWidth/2-oBox.offsetWidth/2;
+			var y=aSpan[i].offsetTop+aSpan[i].offsetHeight/2-oBox.offsetHeight/2;	
+			var xR=getRandom(-180,180);
+			var yR=getRandom(-180,180);
+			aSpan[i].style.transform='translate('+x+'px,'+y+'px) rotateX('+xR+'deg) rotateY('+yR+'deg) scale(1.5)';
+			aSpan[i].style.opacity=0;
+		}
+		
+		
+		
+		aSpan[0].addEventListener('transitionend', function (){
+			bFlag=false;
+			for(var i=0; i<aSpan.length; i++)
+			{
+				aSpan[i].style.transition='none';
+				aSpan[i].style.transform='translate(0px,0px)  rotateX(0deg) rotateY(0deg)';
+				aSpan[i].style.background='url(img/'+iNow%3+'.jpg) no-repeat';
+				aSpan[i].style.backgroundPosition='-'+xArr[i]+'px -'+yArr[i]+'px';
+				aSpan[i].style.opacity=1;
+			}
+			
+		}, false);
+			
+			
+				
+	};
+	
+	function getRandom(n,m)
+	{
+		return Math.floor(Math.random()*(m-n)+n);	
+	}
+};
+</script>
+</head>
+
+<body>
+<div id="box">
+	
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

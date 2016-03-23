@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0; padding:0; }
+.calendar { display:none; width:280px; border:1px solid red; font-size:24px; position:absolute;}
+span { display:block; height:40px; line-height:40px; text-align:center; }
+ul, ol { overflow:hidden; }
+li { list-style:none; float:left; width:40px; height:40px; line-height:40px; text-align:center; }
+a{ position:absolute;top:2px;}
+.prev{left:0;}
+.next{right:0;}
+.week { color:red; }
+.past { color:#ccc; }
+.today { color:blue; font-size:12px; }

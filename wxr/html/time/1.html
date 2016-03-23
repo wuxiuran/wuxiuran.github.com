@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	body{background:black; text-align:center; color:#FFF; font-size:48px;}
+</style>
+<script>
+window.onload=function (){
+	var oImg=document.getElementsByTagName('img');
+	
+	time();
+	
+	function toDub(n){
+		return n<10 ? '0'+n	: n+'';
+	}
+	setInterval(time,1000)
+		
+	function time(){
+		var now=new Date();
+		var str=(now.getFullYear()+'')+(toDub(now.getMonth()+1)+'')+(toDub(now.getDate())+'')+(toDub(now.getHours())+'')+(toDub(now.getMinutes())+'')+(toDub(now.getSeconds())+'')
+		for(var i=0;i<oImg.length;i++){
+			oImg[i].src='images/'+str.charAt(i)+'.png';
+		}
+	;}	
+	
+};
+</script>
+</head>
+
+<body style="padding-top:200px;">
+<img src="images/2.png" />
+<img src="images/0.png" />
+<img src="images/1.png" />
+<img src="images/5.png" />
+年
+<img src="images/1.png" />
+<img src="images/2.png" />
+月
+<img src="images/0.png" />
+<img src="images/4.png" />
+日
+<img src="images/1.png" />
+<img src="images/4.png" />
+:
+<img src="images/4.png" />
+<img src="images/1.png" />
+:
+<img src="images/2.png" />
+<img src="images/2.png" />
+</body>
+</html>
