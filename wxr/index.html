@@ -12,11 +12,24 @@
 <script src="jq/index.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded',function (){
+	
+	if(window.navigator.userAgent.indexOf('Chrome') !==-1)
+	{
+			
+	}else
+	{
+		alert('非常抱歉,系统检测到您的浏览器不是谷歌浏览器，由于需求原因可能会有兼容问题，建议您更换浏览器再次打开本网站以达到最佳体验');	
+	}
+	
 	wxr.index.loadpage();	
 	wxr.index.page4();
 	wxr.index.page5();
 	wxr.index.music();
+	
+	
 },false);
+
+
 </script>
 </head>
 
@@ -111,7 +124,7 @@ document.addEventListener('DOMContentLoaded',function (){
 				<div class="myslef">
 					<p class="myslef_message">我叫<span style=" color:#000;">武修然</span></p>
 					<p class="myslef_message">21岁</p>
-					<p class="myslef_message">希望成为一名前端开发工程师</p>
+					<p class="myslef_message">希望找到一份web前端开发的工作</p>
 					<p class="myslef_message">523404544@qq.com || xiantaodewxr@163.com</p>
 				</div>
 			</div>
@@ -173,7 +186,7 @@ document.addEventListener('DOMContentLoaded',function (){
 							</p>
 							<span class="section_about_me_content_wordbox_s"></span>
 							<p class="section_about_me_content_wordbox_p2">
-								北京
+								上海
 							</p>
 						</div>
 					
@@ -198,9 +211,10 @@ document.addEventListener('DOMContentLoaded',function (){
 			
 			<div class="about_myself">
 				<p>2012年毕业于武汉工商学院，2012年毕业于武汉工商学院</p>
-				<p>2012年毕业于武汉工商学院，2012年毕业于武汉工商学院</p>
-				<p>2012年毕业于武汉工商学院，2012年毕业于武汉工商学院</p>
-				<p>2012年毕业于武汉工商学院，2012年毕业于武汉工商学院</p>
+				<p>乐于接受新鲜事物，能很快适应新的工作环境快速的开展工作</p>
+				<p>web前端开发技术过硬，最大的优点就是具有极强的学习能力</p>
+				
+				<p>能很好的与同事沟通，协调工作进行良好的合作，保质高效的完成任务</p>
 			</div>
 		</div>
 		
@@ -274,34 +288,35 @@ document.addEventListener('DOMContentLoaded',function (){
 							<dt>武汉工商学院</dt>
 							<dd style="font-size:12px;">2012年9月~至今</dd>
 							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
+							<dd>获得国家二级助理电子商务师证书</dd>
+							<dd>获得机动车驾驶证</dd>
+							<dd>参加湖北产品顾客满意度调查</dd>
+							<dd>期间被评为'社会实践优秀个人'</dd>
 						</dl>
 					</div>
 					
 					<div class="about_me_experiencelist">
 						<dl>
-							<dt>武汉工商学院</dt>
-							<dd style="font-size:12px;">2012年9月~至今</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
+							<dt>曾就职于亚讯互联投资管理武汉有限公司</dt>
+							<dd style="font-size:12px;">2015年3月~2015年5月</dd>
+							<dd>招商部</dd>
+							<dd>负责向联系客户</dd>
+							<dd>负责向客户推广电商网站合作项目</dd>
+							<dd>完成每月业绩为公司创造3.7万利润</dd>
+							<div>开始了解到web前端技术，产生极大的兴趣</dd>
 						</dl>
 					</div>
 					
 					<div class="about_me_experiencelist">
 						<dl>
-							<dt>武汉工商学院</dt>
-							<dd style="font-size:12px;">2012年9月~至今</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
-							<dd>就读电子商务学院</dd>
+							<dt>北京智能社培训</dt>
+							<dd style="font-size:12px;">2015年10月~2016年3月</dd>
+							<dd>熟练掌握HTML、CSS能根据设计图还原静态页面</dd>
+							<dd>熟练使用JavaScript语言实现页面交互效果及前后台交互，熟练使用JQuery框架</dd>
+							<dd>熟练使用PhotoShop、Git、工具进行开发工作</dd>
+							<dd>熟悉命名空间、SeaJs的开发模式</dd>
+							<dd>熟悉HTML5、CSS3新增的标签及样式，熟悉移动端开发常用布局方式以及常用的库</dd>
+							<dd>了解NodeJS技术，以及AngularJS框架</dd>
 						</dl>
 					</div>
 				</div>
@@ -402,8 +417,19 @@ document.addEventListener('DOMContentLoaded',function (){
 				· CONTACT ME ·
 			</div>
 			
-			<div></div>
+			<div class="contact_me_box1">
+				<p class="contact_me_box1_p1">灵感 代码 梦想 未来</p>
+				<p class="contact_me_box1_p2"><span class="contact_me_box1_p2_s1">INSPIRATION</span> <span class="contact_me_box1_p2_s2">CODE</span> <span class="contact_me_box1_p2_s3">DREAM</span> <span class="contact_me_box1_p2_s4">FUTURE</span></p>
+			</div>
 			
+			<div class="contact_me_box2">
+				<p>学习是一个充实愉悦的过程</p>
+				<p>前端更贴近用户，这种体验非常美妙</p>
+				<p>热爱一切美好的事物</p>
+				<p>行路有良友，便是捷径</p>
+				<p>带上我吧，一起看到更大的世界</p>
+				<p>联系电话：<span style="color:red; font-weight:bold;">17710764840</span></p>
+			</div>
 		</div>
 		
 	</div>

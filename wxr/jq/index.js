@@ -41,6 +41,23 @@ wxr.index.loadpage=function (){
 	var oClose=document.getElementById('box_3d_audiolist_close');
 	
 	
+	window.onresize=function (){
+	
+		
+		
+		
+		H=oF.offsetHeight;
+		for(var i=0; i<aDiv.length; i++)
+		{
+			aDiv[i].style.height=H+'px';
+		}
+		console.log(H);
+		
+		oBox.style.height=H*aDiv.length+'px';
+		
+		
+	};
+	
 	
 	var aDiv=oBox.children;
 	var H=oF.offsetHeight;
@@ -157,7 +174,7 @@ wxr.index.loadpage=function (){
 //运动结束后
 	function move(ev){
 		oBox.removeEventListener('transitionend',move,false);
-		console.log(oBox.bDown);
+		
 		if(oBox.bDown==true){
 			iNow++;
 		}else{
@@ -377,6 +394,7 @@ wxr.index.music=function (){
 	var aDiv=document.querySelectorAll('.box_3d_audiolist_song');
 	var oA=document.getElementById('a1');
 	var oMes=document.querySelector('.message_song');
+	var oMesP=document.querySelector('.message_face');
 	var aP=oMes.getElementsByTagName('p');
 	var oPlayS=document.querySelector('.play_status');
 	var aS=oPlayS.children;
@@ -386,12 +404,15 @@ wxr.index.music=function (){
 	var sArr=[' One More Time, One More Chance','圣诞结','斗战胜佛','Roads Untraveled','Aliez'];
 	var pArr=['山崎将义','陈奕迅','老虎欧巴','Linkin Park','泽野弘之'];
 	var status=['您已开启顺序播放模式','您已开启单曲循环模式','您已开启随机播放模式'];
+	var psArr=['-M-8a27ad84ba04e174b06d672b5b8088da_200x200.jpg','u=2390559146,2924079876&fm=23&gp=0.jpg','u=3217359018,3927760319&fm=21&gp=0.jpg','u=4291561287,2853656525&fm=21&gp=0.jpg','u=1089430266,1646073459&fm=21&gp=0.jpg'];
 	
 	var iNow=0;
 	
 	oA.src='mp3/'+arr[iNow];
 	aP[0].innerHTML=sArr[iNow];
 	aP[1].innerHTML=pArr[iNow];
+	oMesP.style.background='url(img/'+psArr[iNow]+')';
+	oMesP.style.backgroundSize='cover';
 	
 	for(var i=0; i<aS.length; i++)
 	{
@@ -452,6 +473,9 @@ wxr.index.music=function (){
 		aDiv[iNow].className='box_3d_audiolist_song on';	
 		aP[0].innerHTML=sArr[iNow];
 		aP[1].innerHTML=pArr[iNow];
+		oMesP.style.background='url(img/'+psArr[iNow]+')';
+		oMesP.style.backgroundSize='cover';
+		
 	}
 	
 };
