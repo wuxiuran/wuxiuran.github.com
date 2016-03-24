@@ -49,17 +49,49 @@ wxr.index.loadpage=function (){
 	
 	var bDown='';
 	var nNow=0;
+	var timer=null;
 	
-	oBox3d.addEventListener('click', function (){
+	function closeFn(ev){
+		
+		oBox3d.addEventListener('click', openFn, false);
+		oAlist.style.opacity=0;
+		
+		function bbb(){
+			
+			oAlist.style.display='none';
+			
+			timer=setTimeout(function (){
+				
+			oBox3d.style.animation='5s d3 linear infinite';
+			oBox3d.style.transform='perspective(800px) translateX(0px) translateY(0px) rotateY(-60deg) rotateX(30deg)';
+			oLeft.style.transform='translateX(-100px) translateY(0px) rotateY(90deg) rotateX(0deg)';
+			oRface.style.transform='translateX(100px) translateY(0px) rotateY(-90deg) rotateX(0deg)';
+			oTop.style.transform='translateZ(100px) translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg)';
+			oBottom.style.transform='translateZ(-100px) translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg)';
+			oLface.style.transform='translateX(0px) translateY(100px) rotateY(0deg) rotateX(90deg)';
+			oRight.style.transform='translateX(0px) translateY(-100px) rotateY(0deg) rotateX(-90deg)';	
+			
+			timer=null;
+			},0);
+			
+			oAlist.removeEventListener('transitionend', bbb, false);
+		}
+		
+		oAlist.addEventListener('transitionend', bbb, false);
+		ev.cancelBubble=true;
+	}
+	
+	
+	
+	 function openFn(){
+		 
 		
 		this.style.animation='none';
 		setTimeout(function (){
-			oBox3d.style.transform='perspective(800px) translateX(400px) translateY(-200px) rotateY(0deg) rotateX(0deg)';
+			oBox3d.style.transform='perspective(800px) translateX(400px) translateY(-320px) rotateY(0deg) rotateX(0deg)';
 		},0);
 		
-		
-		
-		oBox3d.addEventListener('transitionend',function (){
+		function aaa(){
 			
 			
 			oLeft.style.transform='translateX(200px) translateY(-200px) rotateY(0deg) rotateX(0deg)';
@@ -69,23 +101,34 @@ wxr.index.loadpage=function (){
 			oLface.style.transform='translateX(0px) translateY(200px) rotateY(0deg) rotateX(0deg)';
 			oRight.style.transform='translateX(0px) translateY(-200px) rotateY(0deg) rotateX(0deg)';
 			
-			oLeft.style.opacity=1;
-			oRface.style.opacity=1;
-			oTop.style.opacity=1;
-			oBottom.style.opacity=1;
-			oLface.style.opacity=1;
-			oRight.style.opacity=1;
-			
-			oRight.addEventListener('transitionend',function (){
+			function ccc(){
 				oAlist.style.display='block';
 				setTimeout(function (){
 					oAlist.style.opacity=1;
+					
 				},0);
-			},false);
-		},false);
-		
+				
+				oRight.removeEventListener('transitionend', ccc,false);
+			}
 			
-	}, false);
+			oRight.addEventListener('transitionend', ccc,false);
+			
+			oBox3d.removeEventListener('transitionend',aaa,false);
+		}
+		
+		
+		
+		oBox3d.addEventListener('transitionend',aaa,false);
+		
+		oBox3d.removeEventListener('click', openFn, false);
+			
+	}
+	
+	
+	
+	
+	oClose.addEventListener('click', closeFn, false);
+	oBox3d.addEventListener('click', openFn, false);
 	
 	
 	function toScroll(bDown)
@@ -328,6 +371,101 @@ wxr.index.page5=function (){
 		}	
 	}, false);
 };
+
+wxr.index.music=function (){
+	var oBox=document.getElementById('box_3d_audiolist');
+	var aDiv=document.querySelectorAll('.box_3d_audiolist_song');
+	var oA=document.getElementById('a1');
+	var oMes=document.querySelector('.message_song');
+	var aP=oMes.getElementsByTagName('p');
+	var oPlayS=document.querySelector('.play_status');
+	var aS=oPlayS.children;
+	
+	var playStatus=0;
+	var arr=['山崎将义 - One More Time, One More Chance.mp3','陈奕迅 - 圣诞结.mp3','老虎欧巴 - 斗战胜佛.mp3','Linkin Park - Roads Untraveled.mp3','泽野弘之 - Aliez.mp3'];
+	var sArr=[' One More Time, One More Chance','圣诞结','斗战胜佛','Roads Untraveled','Aliez'];
+	var pArr=['山崎将义','陈奕迅','老虎欧巴','Linkin Park','泽野弘之'];
+	var status=['您已开启顺序播放模式','您已开启单曲循环模式','您已开启随机播放模式'];
+	
+	var iNow=0;
+	
+	oA.src='mp3/'+arr[iNow];
+	aP[0].innerHTML=sArr[iNow];
+	aP[1].innerHTML=pArr[iNow];
+	
+	for(var i=0; i<aS.length; i++)
+	{
+		(function (index){
+			aS[i].addEventListener('click', function (ev){
+				playStatus=index;	
+				alert(status[index]);
+				ev.cancelBubble=true;
+			}, false);	
+		})(i)
+		
+	}
+	
+	function rnd(n,m)
+	{
+		return Math.floor(Math.random()*(m-n)+n);	
+	}
+	
+	oA.addEventListener('ended',function (){
+		switch (playStatus)
+		{
+			case 0:
+				iNow++;
+				tab();
+				break;
+			case 1:
+				tab();
+				break;
+			case 2:
+				iNow=rnd(0,aDiv.length);
+				tab();
+				break;
+		}	
+	}, false);
+	
+	
+	
+	for(var i=0; i<aDiv.length; i++)
+	{
+		(function (index){
+			aDiv[i].addEventListener('click',function (ev){
+				iNow=index;
+				tab();
+				ev.cancelBubble=true;
+			}, false);		
+		})(i)
+			
+	};
+	
+	function tab()
+	{
+		oA.src='mp3/'+arr[iNow];
+		oA.play();
+		for(var i=0; i<aDiv.length; i++)
+		{
+			aDiv[i].className='box_3d_audiolist_song';
+		}
+		aDiv[iNow].className='box_3d_audiolist_song on';	
+		aP[0].innerHTML=sArr[iNow];
+		aP[1].innerHTML=pArr[iNow];
+	}
+	
+};
+
+
+
+
+
+
+
+
+
+
+
 
 
 

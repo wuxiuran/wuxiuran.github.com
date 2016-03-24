@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded',function (){
 	wxr.index.loadpage();	
 	wxr.index.page4();
 	wxr.index.page5();
+	wxr.index.music();
 },false);
 </script>
 </head>
@@ -75,8 +76,27 @@ document.addEventListener('DOMContentLoaded',function (){
 		<div class="box_3d_right clip"></div>
 		<div class="box_3d_left-face clip"></div>
 		<div class="box_3d_right-face clip"></div>
-		<div class="box_3d_audiolist">
+		<div class="box_3d_audiolist" id="box_3d_audiolist">
 			<i id="box_3d_audiolist_close"></i>
+			<div class="play_status clearfix">
+				<span>顺序播放</span>
+				<span>单曲循环</span>
+				<span>随机播放</span>
+			</div>
+			<div style="margin-top:200px;" class="box_3d_audiolist_song">山崎将义 - One More Time, One More Chance</div>
+			<div class="box_3d_audiolist_song"> 陈奕迅 - 圣诞结</div>
+			<div class="box_3d_audiolist_song">老虎欧巴 - 斗战胜佛</div>
+			<div class="box_3d_audiolist_song">Linkin Park - Roads Untraveled</div>
+			<div class="box_3d_audiolist_song">泽野弘之 - Aliez</div>
+			<div class="play_box clearfix">
+				<div class="message_face"></div>
+				<div class="message_song">
+					<p>歌名</p>
+					<p>歌手</p>
+				</div>
+				<audio id="a1" controls></audio>
+			</div>
+			
 		</div>
 	</div>
 	
@@ -89,7 +109,7 @@ document.addEventListener('DOMContentLoaded',function (){
 					人生一世，草木一秋。
 				</p>
 				<div class="myslef">
-					<p class="myslef_message">我叫武修然</p>
+					<p class="myslef_message">我叫<span style=" color:#000;">武修然</span></p>
 					<p class="myslef_message">21岁</p>
 					<p class="myslef_message">希望成为一名前端开发工程师</p>
 					<p class="myslef_message">523404544@qq.com || xiantaodewxr@163.com</p>
@@ -177,10 +197,10 @@ document.addEventListener('DOMContentLoaded',function (){
 			</ul>
 			
 			<div class="about_myself">
-				<p>2014年毕业于四川工商学院，现就职于成都兰途网络科技有限公司</p>
-				<p>2014年毕业于四川工商学院，现就职于成都兰途网络科技有限公司</p>
-				<p>2014年毕业于四川工商学院，现就职于成都兰途网络科技有限公司</p>
-				<p>2014年毕业于四川工商学院，现就职于成都兰途网络科技有限公司</p>
+				<p>2012年毕业于武汉工商学院，2012年毕业于武汉工商学院</p>
+				<p>2012年毕业于武汉工商学院，2012年毕业于武汉工商学院</p>
+				<p>2012年毕业于武汉工商学院，2012年毕业于武汉工商学院</p>
+				<p>2012年毕业于武汉工商学院，2012年毕业于武汉工商学院</p>
 			</div>
 		</div>
 		
@@ -300,7 +320,7 @@ document.addEventListener('DOMContentLoaded',function (){
 		
 		
 		<div class="section_about_me" style="overflow:visible; ">
-			<h2 class="section_about_me_h" style="margin-top:0;padding-top:200px;">
+			<h2 class="section_about_me_h" style="margin-top:0;padding-top:150px;">
 				效果案例
 			</h2>
 			<div class="section_about_me_title">
