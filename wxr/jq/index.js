@@ -103,7 +103,7 @@ wxr.index.loadpage=function (){
 	 function openFn(){
 		var nX=document.documentElement.clientWidth/2-300; 
 		var nY=document.documentElement.clientHeight/2-250;
-		alert(nY);
+		
 		this.style.animation='none';
 		setTimeout(function (){
 			oBox3d.style.transform='perspective(800px) translateX('+nX+'px) translateY(-'+nY+'px) rotateY(0deg) rotateX(0deg)';
