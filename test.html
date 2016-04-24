@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定制风格</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <style type="text/css">
+    .box{ width: 200px; height: 200px; background: red; position: relative;}
+
+    .box>.glyphicon{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+    .box:hover>.glyphicon{ color: yellow;}
+    
+    .container .col{ background: #ccc; border: 1px solid #999; text-align: center; line-height: 30px; height: 30px;}
+  </style>
+</head>
+<body>
+   <button type="button" class="btn">基本按钮</button>
+   <button type="button" class="btn btn-default">默认按钮</button>
+   <button type="button" class="btn btn-primary">主要按钮</button>
+   <button type="button" class="btn btn-default">默认按钮</button>
+
+   <div class="box">
+      <span class="glyphicon glyphicon-cloud"></span>
+   </div>
+   
+   <div class="container">
+      <div class="row">
+        <div class="col col-md-2 col-md-push-8">col-md-1</div>
+        <div class="col col-md-6 col-md-pull-4 col-md-offset-2">col-md-2</div>
+        <div class="col col-md-2">col-md-3</div>
+      </div>
+   </div>
+</body>
+</html>
