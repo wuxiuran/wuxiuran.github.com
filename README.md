@@ -1,2 +1,5 @@
 # wuxiuran.github.com
-this is my friend
+
+您好，我是武修然，这是我的个人求职简历。
+
+需要前端工程师的可以给我打电话：17710764840.

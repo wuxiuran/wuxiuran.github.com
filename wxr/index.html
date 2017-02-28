@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded',function (){
 	
 	<div class="position_box" id="p_box">
 		<!--首页部分-->
-		<div class="sec_css">
+		<div class="section_about_me page_js">
 			<div class="face_box"></div>
 			<div class="name_box">
 				<p class="name_box_word">
@@ -132,13 +132,14 @@ document.addEventListener('DOMContentLoaded',function (){
 		<!--首页结束-->
 		
 		<!--关于我-->
-		<div class="section_about_me">
+		<div class="section_about_me page_js">
 			<h2 class="section_about_me_h">
 				关于我
+				<div class="section_about_me_title">
+					· ABOUT ME ·
+				</div>
 			</h2>
-			<div class="section_about_me_title">
-				· ABOUT ME ·
-			</div>
+			
 			<ul class="section_about_me_list" id="section_about_me_list">
 				<li class="section_about_me_content">
 					<div class="section_about_me_content_bg">
@@ -218,13 +219,14 @@ document.addEventListener('DOMContentLoaded',function (){
 			</div>
 		</div>
 		
-		<div class="section_about_me">
+		<div class="section_about_me page_js">
 			<h2 class="section_about_me_h">
 				专业技能
+				<div class="section_about_me_title">
+					· SKILL ·
+				</div>
 			</h2>
-			<div class="section_about_me_title">
-				· SKILL ·
-			</div>
+			
 			<div class="about_me_skillword">
 				<p>IT行业的学习需要持之以恒，知识深度与广度都很重要。而前端开发的重中之重就是原生javascript的理解，一直都在不断琢磨《javascript高级程序设计》这本书来内化自己。另外还在不断学习新的知识，如angular，node，php等等。</p>
 			</div>
@@ -268,13 +270,14 @@ document.addEventListener('DOMContentLoaded',function (){
 			
 		</div>
 		
-		<div class="section_about_me">
+		<div class="section_about_me page_js">
 			<h2 class="section_about_me_h">
 				我的经历
+				<div class="section_about_me_title">
+					· EXPERIENCE ·
+				</div>
 			</h2>
-			<div class="section_about_me_title">
-				· EXPERIENCE ·
-			</div>
+			
 			<div class="about_me_experienceword">
 				<p>2014年毕业后，在工作之余开始了web前端自学生涯。</p>
 			</div>
@@ -285,8 +288,19 @@ document.addEventListener('DOMContentLoaded',function (){
 				<div class="about_me_experiencesonbox clearfix" id="experiencesonbox">
 					<div class="about_me_experiencelist">
 						<dl>
+							<dt>现就职于上海翼得营销策划有限公司</dt>
+							<dd style="font-size:12px;">2016年3月~至今</dd>
+							<dd>研发部</dd>
+							<dd>负责公司官网前端的更新与维护</dd>
+							<dd>负责公司TALKMED项目web前端的研发与维护</dd>
+							<dd>负责公司eda项目的研发与制作等</dd>
+						</dl>
+					</div>
+					
+					<div class="about_me_experiencelist">
+						<dl>
 							<dt>武汉工商学院</dt>
-							<dd style="font-size:12px;">2012年9月~至今</dd>
+							<dd style="font-size:12px;">2012年9月~2016年6月</dd>
 							<dd>就读电子商务学院</dd>
 							<dd>获得国家二级助理电子商务师证书</dd>
 							<dd>获得机动车驾驶证</dd>
@@ -297,26 +311,14 @@ document.addEventListener('DOMContentLoaded',function (){
 					
 					<div class="about_me_experiencelist">
 						<dl>
-							<dt>曾就职于亚讯互联投资管理武汉有限公司</dt>
-							<dd style="font-size:12px;">2015年3月~2015年5月</dd>
-							<dd>招商部</dd>
-							<dd>负责向联系客户</dd>
-							<dd>负责向客户推广电商网站合作项目</dd>
-							<dd>完成每月业绩为公司创造3.7万利润</dd>
-							<div>开始了解到web前端技术，产生极大的兴趣</dd>
-						</dl>
-					</div>
-					
-					<div class="about_me_experiencelist">
-						<dl>
 							<dt>北京智能社培训</dt>
 							<dd style="font-size:12px;">2015年10月~2016年3月</dd>
 							<dd>熟练掌握HTML、CSS能根据设计图还原静态页面</dd>
-							<dd>熟练使用JavaScript语言实现页面交互效果及前后台交互，熟练使用JQuery框架</dd>
+							<dd>熟练使用JavaScript语言实现页面交互效果及前后台交互，熟练使用JQuery,Vuejs,Angularjs,three.js等主流框架</dd>
 							<dd>熟练使用PhotoShop、Git、工具进行开发工作</dd>
 							<dd>熟悉命名空间、SeaJs的开发模式</dd>
 							<dd>熟悉HTML5、CSS3新增的标签及样式，熟悉移动端开发常用布局方式以及常用的库</dd>
-							<dd>了解NodeJS技术，以及AngularJS框架</dd>
+							<dd>了解NodeJS技术。</dd>
 						</dl>
 					</div>
 				</div>
@@ -334,13 +336,14 @@ document.addEventListener('DOMContentLoaded',function (){
 		</div>
 		
 		
-		<div class="section_about_me" style="overflow:visible; ">
+		<div class="section_about_me page_js" style="overflow:visible; ">
 			<h2 class="section_about_me_h" style="margin-top:0;padding-top:150px;">
 				效果案例
+				<div class="section_about_me_title">
+					· DEMO ·
+				</div>
 			</h2>
-			<div class="section_about_me_title">
-				· DEMO ·
-			</div>
+			
 			
 			<ul class="about_me_demobox" id="about_me_demobox">
 				
@@ -409,13 +412,14 @@ document.addEventListener('DOMContentLoaded',function (){
 		</div>
 		
 		
-		<div class="section_about_me">
+		<div class="section_about_me page_js">
 			<h2 class="section_about_me_h">
 				联系我
+				<div class="section_about_me_title">
+					· CONTACT ME ·
+				</div>
 			</h2>
-			<div class="section_about_me_title">
-				· CONTACT ME ·
-			</div>
+			
 			
 			<div class="contact_me_box1">
 				<p class="contact_me_box1_p1">灵感 代码 梦想 未来</p>

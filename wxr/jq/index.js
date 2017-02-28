@@ -38,6 +38,7 @@ wxr.index.loadpage=function (){
 	var oTop=document.querySelector('.box_3d_top');
 	var oBottom=document.querySelector('.box_3d_bottom');
 	var oAlist=document.querySelector('.box_3d_audiolist');
+	var sPage=document.querySelectorAll('.page_js');
 	var oClose=document.getElementById('box_3d_audiolist_close');
 	
 	
@@ -51,18 +52,17 @@ wxr.index.loadpage=function (){
 		{
 			aDiv[i].style.height=H+'px';
 		}
-		console.log(H);
 		
 		oBox.style.height=H*aDiv.length+'px';
 		
-		
+		toScroll();
 	};
 	
 	
 	var aDiv=oBox.children;
 	var H=oF.offsetHeight;
 	
-	var iNow=1;
+	var iNow=0;
 	
 	var bDown='';
 	var nNow=0;
@@ -70,7 +70,7 @@ wxr.index.loadpage=function (){
 	
 	function closeFn(ev){
 		
-		oBox3d.addEventListener('click', openFn, false);
+		
 		oAlist.style.opacity=0;
 		
 		function bbb(){
@@ -78,17 +78,21 @@ wxr.index.loadpage=function (){
 			oAlist.style.display='none';
 			
 			timer=setTimeout(function (){
+
+				oBox3d.style.bottom='20%';
+				oBox3d.style.left='20%';
+				oBox3d.style.marginLeft='-100px';
+				oBox3d.style.animation='5s d3 linear infinite';
+				oBox3d.style.transform='perspective(800px) rotateY(-60deg) rotateX(30deg)';
+				oLeft.style.transform='translateX(-100px) translateY(0px) rotateY(90deg) rotateX(0deg)';
+				oRface.style.transform='translateX(100px) translateY(0px) rotateY(-90deg) rotateX(0deg)';
+				oTop.style.transform='translateZ(100px) translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg)';
+				oBottom.style.transform='translateZ(-100px) translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg)';
+				oLface.style.transform='translateX(0px) translateY(100px) rotateY(0deg) rotateX(90deg)';
+				oRight.style.transform='translateX(0px) translateY(-100px) rotateY(0deg) rotateX(-90deg)';	
 				
-			oBox3d.style.animation='5s d3 linear infinite';
-			oBox3d.style.transform='perspective(800px) translateX(0px) translateY(0px) rotateY(-60deg) rotateX(30deg)';
-			oLeft.style.transform='translateX(-100px) translateY(0px) rotateY(90deg) rotateX(0deg)';
-			oRface.style.transform='translateX(100px) translateY(0px) rotateY(-90deg) rotateX(0deg)';
-			oTop.style.transform='translateZ(100px) translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg)';
-			oBottom.style.transform='translateZ(-100px) translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg)';
-			oLface.style.transform='translateX(0px) translateY(100px) rotateY(0deg) rotateX(90deg)';
-			oRight.style.transform='translateX(0px) translateY(-100px) rotateY(0deg) rotateX(-90deg)';	
-			
-			timer=null;
+				timer=null;
+				oBox3d.addEventListener('click', openFn, false);
 			},0);
 			
 			oAlist.removeEventListener('transitionend', bbb, false);
@@ -104,29 +108,36 @@ wxr.index.loadpage=function (){
 		var nX=document.documentElement.clientWidth/2-300; 
 		var nY=document.documentElement.clientHeight/2-250;
 		
-		
+		oBox3d.removeEventListener('click', openFn, false);
+		oBox3d.addEventListener('transitionend',aaa,false);
 		
 		this.style.animation='none';
+
 		setTimeout(function (){
-			oBox3d.style.transform='perspective(800px) translateX('+nX+'px) translateY(-'+nY+'px) rotateY(0deg) rotateX(0deg)';
-		},0);
+			oBox3d.style.bottom='50%';
+			oBox3d.style.left='50%';
+			oBox3d.style.marginLeft='-200px';
+			compatible(oBox3d,'perspective(800px) rotateY(0deg) rotateX(0deg)');
+		},30);
+		
+		
 		
 		function aaa(){
+
+			compatible(oLeft,'translateX(200px) translateY(-200px) rotateY(0deg) rotateX(0deg)');
+			compatible(oRface,'translateX(200px) translateY(0px) rotateY(0deg) rotateX(0deg)');
+			compatible(oTop,'translateZ(0px) translateX(200px) translateY(200px) rotateY(0deg) rotateX(0deg)');
+			compatible(oBottom,'translateZ(0px) translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg)');
+			compatible(oLface,'translateX(0px) translateY(200px) rotateY(0deg) rotateX(0deg)');
+			compatible(oRight,'translateX(0px) translateY(-200px) rotateY(0deg) rotateX(0deg)');
 			
-			
-			oLeft.style.transform='translateX(200px) translateY(-200px) rotateY(0deg) rotateX(0deg)';
-			oRface.style.transform='translateX(200px) translateY(0px) rotateY(0deg) rotateX(0deg)';
-			oTop.style.transform='translateZ(0px) translateX(200px) translateY(200px) rotateY(0deg) rotateX(0deg)';
-			oBottom.style.transform='translateZ(0px) translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg)';
-			oLface.style.transform='translateX(0px) translateY(200px) rotateY(0deg) rotateX(0deg)';
-			oRight.style.transform='translateX(0px) translateY(-200px) rotateY(0deg) rotateX(0deg)';
+	
 			
 			function ccc(){
 				oAlist.style.display='block';
 				setTimeout(function (){
 					oAlist.style.opacity=1;
-					
-				},0);
+				},30);
 				
 				oRight.removeEventListener('transitionend', ccc,false);
 			}
@@ -138,33 +149,47 @@ wxr.index.loadpage=function (){
 		
 		
 		
-		oBox3d.addEventListener('transitionend',aaa,false);
 		
-		oBox3d.removeEventListener('click', openFn, false);
+		
+		
 			
 	}
 	
 	
+
+
+	function compatible(obj,str){
+		obj.style.transform = str;
+		obj.style.WebkitTransform = str;
+		obj.style.MozTransform = str;
+		obj.style.msTransform = str;
+		obj.style.OTransform = str;
+	}
+
+
+
+
 	
 	
 	oClose.addEventListener('click', closeFn, false);
 	oBox3d.addEventListener('click', openFn, false);
 	
-	
-	function toScroll(bDown)
+	var scrollFlag = false;
+	function toScroll()
 	{
 		
 		
 		for(var i=0; i<aLi.length; i++)
 		{
-			aLi[i].className='';	
+			aLi[i].className='';
+			sPage[i].className='section_about_me';
 		}
 		aLi[iNow].className='on_now';
+		sPage[iNow].className='section_about_me active';
 		
 		oBox.style.transform='translate(0,-'+H*iNow+'px)';
 		//oF.style.backgroundPositionY='-'+document.documentElement.clientWidth/1024*1536/aDiv.length*iNow+'px';	
-		nNow=iNow;
-		oBox.bDown=bDown;
+		
 		oBox.addEventListener('transitionend',move,false);	
 		
 	}
@@ -178,11 +203,7 @@ wxr.index.loadpage=function (){
 	function move(ev){
 		oBox.removeEventListener('transitionend',move,false);
 		
-		if(oBox.bDown==true){
-			iNow++;
-		}else{
-			iNow--;	
-		}
+		scrollFlag = false;
 	}
 
 	oBox.addEventListener('transitionend',move,false);
@@ -208,8 +229,11 @@ wxr.index.loadpage=function (){
 		}
 		
 		function _wheel(ev){
-			
-			
+			ev.preventDefault && ev.preventDefault();
+
+			if (scrollFlag)return;
+			scrollFlag = true;
+
 			if(ev.wheelDelta)
 			{
 				var down=ev.wheelDelta > 0 ? false : true;
@@ -220,8 +244,7 @@ wxr.index.loadpage=function (){
 			}
 			fn(down);
 			
-			ev.preventDefault && ev.preventDefault();
-			return false;
+			
 		}
 	}	
 
@@ -229,41 +252,142 @@ wxr.index.loadpage=function (){
 
 addWheel(oBox, function (bDown){
 	
+	
 	if(bDown)
 	{
-		if(nNow==5)return;
-		if(iNow<nNow)
-		{
-			iNow=nNow+1	
-		}
-		
+		iNow++;
 		if(iNow >= aLi.length-1)
 		{
 			iNow=aLi.length-1;
+			scrollFlag = false;
 		}	
-		
-		
-		console.log(iNow);
-		toScroll(bDown);
-		
-		
 	}
 	else
 	{
-		if(nNow==0)return;
-		if(iNow>nNow)
-		{
-			iNow=nNow-1	
-		}
-		
+		iNow--;
 		if(iNow <= 0)
 		{
 			iNow=0;	
+			scrollFlag = false;
 		}	
-		console.log(iNow);
-		toScroll(bDown);
 	}	
+	toScroll();
 });	
+
+// 	function toScroll(bDown)
+// 	{
+		
+		
+// 		for(var i=0; i<aLi.length; i++)
+// 		{
+// 			aLi[i].className='';	
+// 		}
+// 		aLi[iNow].className='on_now';
+		
+// 		oBox.style.transform='translate(0,-'+H*iNow+'px)';
+// 		//oF.style.backgroundPositionY='-'+document.documentElement.clientWidth/1024*1536/aDiv.length*iNow+'px';	
+// 		nNow=iNow;
+// 		oBox.bDown=bDown;
+// 		oBox.addEventListener('transitionend',move,false);	
+		
+// 	}
+	
+// 	for(var i=0; i<aLi.length; i++)
+// 	{
+// 		aLi[i].index=i;	
+// 	}
+
+// //运动结束后
+// 	function move(ev){
+// 		oBox.removeEventListener('transitionend',move,false);
+		
+// 		if(oBox.bDown==true){
+// 			iNow++;
+// 		}else{
+// 			iNow--;	
+// 		}
+// 	}
+
+// 	oBox.addEventListener('transitionend',move,false);
+	
+// 	for(var i=0; i<aDiv.length; i++)
+// 	{
+// 		aDiv[i].style.height=H+'px';
+// 	}
+	
+// //封装	
+// 	function addWheel(obj,fn)
+// 	{
+		
+// 		if (window.navigator.userAgent.toLowerCase().indexOf('firefox') != -1)
+// 		{
+			
+// 			obj.addEventListener('DOMMouseScroll', _wheel, false);
+// 		}
+// 		else
+// 		{
+			
+// 			obj.onmousewheel=_wheel;
+// 		}
+		
+// 		function _wheel(ev){
+			
+			
+// 			if(ev.wheelDelta)
+// 			{
+// 				var down=ev.wheelDelta > 0 ? false : true;
+// 			}
+// 			else
+// 			{
+// 				var down=ev.detail > 0 ? true : false;	
+// 			}
+// 			fn(down);
+			
+// 			ev.preventDefault && ev.preventDefault();
+// 			return false;
+// 		}
+// 	}	
+
+// //调用	
+
+// addWheel(oBox, function (bDown){
+	
+// 	if(bDown)
+// 	{
+// 		if(nNow==5)return;
+// 		if(iNow<nNow)
+// 		{
+// 			iNow=nNow+1	
+// 		}
+		
+// 		if(iNow >= aLi.length-1)
+// 		{
+// 			iNow=aLi.length-1;
+// 		}	
+		
+		
+// 		console.log(iNow);
+// 		toScroll(bDown);
+		
+		
+// 	}
+// 	else
+// 	{
+// 		if(nNow==0)return;
+// 		if(iNow>nNow)
+// 		{
+// 			iNow=nNow-1	
+// 		}
+		
+// 		if(iNow <= 0)
+// 		{
+// 			iNow=0;	
+// 		}	
+// 		console.log(iNow);
+// 		toScroll(bDown);
+// 	}	
+// });	
+
 
 
 	
